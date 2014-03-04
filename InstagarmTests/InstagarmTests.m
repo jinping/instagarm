@@ -2,7 +2,7 @@
 //  InstagarmTests.m
 //  InstagarmTests
 //
-//  Created by lys on 3/3/14.
+//  Created by AlexWang on 3/3/14.
 //  Copyright (c) 2014 2wodigits. All rights reserved.
 //
 

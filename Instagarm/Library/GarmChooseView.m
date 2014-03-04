@@ -2,12 +2,14 @@
 //  GarmChooseView.m
 //  Instagarm
 //
-//  Created by lys on 3/3/14.
+//  Created by AlexWang on 3/3/14.
 //  Copyright (c) 2014 2wodigits. All rights reserved.
 //
 
 #import "GarmChooseView.h"
 #import "GarmObject.h"
+#import "InstagarmAppDelegate.h"
+#import "ChooseInstagarmViewController.h"
 
 @implementation GarmChooseView
 
@@ -33,7 +35,7 @@
     self.pageControl.numberOfPages = [garmList count];
     [self.pageControl addTarget:self action:@selector(changePage) forControlEvents:UIControlEventValueChanged];
     
-    isChecked = NO;
+    self.isChecked = NO;
     
     [self setGarmContent];
     
@@ -85,16 +87,20 @@
 }
 - (IBAction)btnCheck:(id)sender
 {
-    if(isChecked)
+    NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
+    if(self.isChecked)
     {
         [self.btnCheck setImage:[UIImage imageNamed:@"btnUncheck.png"] forState:UIControlStateNormal];
-        isChecked = NO;
+        self.isChecked = NO;
+        [btnStatus setBool:NO forKey:@"GarmChoose"];
     }
     else
     {
         [self.btnCheck setImage:[UIImage imageNamed:@"btnCheck.png"] forState:UIControlStateNormal];
-        isChecked = YES;
+        self.isChecked = YES;
+        [btnStatus setBool:YES forKey:@"GarmChoose"];
     }
+    [btnStatus synchronize];
 
 }
 /*

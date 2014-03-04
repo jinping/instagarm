@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "GarmChooseView.h"
+#import "CameraRollView.h"
+#import "MyAlbumPicker.h"
 
 @interface ChooseInstagarmViewController : UIViewController
 
@@ -18,13 +20,15 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 
 @property (strong, nonatomic) GarmChooseView *chooseView;
+@property (strong, nonatomic) CameraRollView *cameraRollView;
+@property (strong, nonatomic) MyAlbumPicker *albumPicker;
 
 - (IBAction)btnBack:(id)sender;
 - (IBAction)btnGarm:(id)sender;
 - (IBAction)btnGallory:(id)sender;
 - (IBAction)btnEditGarm:(id)sender;
 - (IBAction)btnOrder:(id)sender;
-- (IBAction)btnCheck:(id)sender;
 
+- (void)removeSubViews;
 
 @end

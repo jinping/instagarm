@@ -47,6 +47,7 @@
     self.mpPlayer.controlStyle = MPMovieControlStyleNone;
     
     [self.view addSubview:self.mpPlayer.view];
+    self.mpPlayer.repeatMode = 1;
     [self.mpPlayer play];
 }
 - (void)addLogoImage

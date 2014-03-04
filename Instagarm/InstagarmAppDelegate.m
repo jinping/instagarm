@@ -2,7 +2,7 @@
 //  InstagarmAppDelegate.m
 //  Instagarm
 //
-//  Created by lys on 3/3/14.
+//  Created by AlexWang on 3/3/14.
 //  Copyright (c) 2014 2wodigits. All rights reserved.
 //
 
@@ -10,6 +10,10 @@
 
 @implementation InstagarmAppDelegate
 
++ (InstagarmAppDelegate*)sharedInstance
+{
+    return (InstagarmAppDelegate*)[[UIApplication sharedApplication] delegate];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.

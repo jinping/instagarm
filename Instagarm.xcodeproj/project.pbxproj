@@ -44,6 +44,25 @@
 		40E3716918C5761800F3C6FF /* Aleo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40E3716618C5761800F3C6FF /* Aleo-Bold.otf */; };
 		40E3716A18C5761800F3C6FF /* Aleo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40E3716718C5761800F3C6FF /* Aleo-Regular.otf */; };
 		40E3716B18C5761800F3C6FF /* Franklin Gothic Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40E3716818C5761800F3C6FF /* Franklin Gothic Medium.ttf */; };
+		40EB975418C5A30B00922A41 /* CameraRollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB975318C5A30B00922A41 /* CameraRollView.m */; };
+		40EB975718C5A34400922A41 /* CameraRollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975618C5A34400922A41 /* CameraRollView.xib */; };
+		40EB976018C5A3A300922A41 /* btnCheck1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975918C5A3A300922A41 /* btnCheck1.png */; };
+		40EB976118C5A3A300922A41 /* btnDelete.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975A18C5A3A300922A41 /* btnDelete.png */; };
+		40EB976218C5A3A300922A41 /* btnGarmChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975B18C5A3A300922A41 /* btnGarmChecked.png */; };
+		40EB976318C5A3A300922A41 /* btnGarmInactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975C18C5A3A300922A41 /* btnGarmInactive.png */; };
+		40EB976418C5A3A300922A41 /* btnUncheck1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975D18C5A3A300922A41 /* btnUncheck1.png */; };
+		40EB976518C5A3A300922A41 /* gallaryBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975E18C5A3A300922A41 /* gallaryBack.png */; };
+		40EB976618C5A3A300922A41 /* tablecellback.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB975F18C5A3A300922A41 /* tablecellback.png */; };
+		40EB978718C5D19C00922A41 /* MyAlbumPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB978618C5D19C00922A41 /* MyAlbumPicker.m */; };
+		40EB978B18C5D1D200922A41 /* MyAlbumPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB978A18C5D1D200922A41 /* MyAlbumPicker.xib */; };
+		40EB978E18C5DB5D00922A41 /* pickerTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB978D18C5DB5D00922A41 /* pickerTableCell.m */; };
+		40EB979118C5DB7700922A41 /* pickerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979018C5DB7700922A41 /* pickerTableCell.xib */; };
+		40EB979318C5E43B00922A41 /* tablecellforg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979218C5E43B00922A41 /* tablecellforg.png */; };
+		40EB979518C5EB0F00922A41 /* MyImagePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979418C5EB0F00922A41 /* MyImagePickerView.xib */; };
+		40EB979818C5EB4D00922A41 /* MyImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB979718C5EB4D00922A41 /* MyImagePicker.m */; };
+		40EB979B18C5ED5700922A41 /* ThumbImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB979A18C5ED5700922A41 /* ThumbImage.m */; };
+		40EB979D18C5ED6D00922A41 /* ThumbImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979C18C5ED6D00922A41 /* ThumbImage.xib */; };
+		40EB97A118C63AA600922A41 /* btnGallaryActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979E18C63AA600922A41 /* btnGallaryActive.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +121,30 @@
 		40E3716618C5761800F3C6FF /* Aleo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aleo-Bold.otf"; path = "Fonts/Aleo-Bold.otf"; sourceTree = "<group>"; };
 		40E3716718C5761800F3C6FF /* Aleo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aleo-Regular.otf"; path = "Fonts/Aleo-Regular.otf"; sourceTree = "<group>"; };
 		40E3716818C5761800F3C6FF /* Franklin Gothic Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Franklin Gothic Medium.ttf"; path = "Fonts/Franklin Gothic Medium.ttf"; sourceTree = "<group>"; };
+		40EB975218C5A30B00922A41 /* CameraRollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraRollView.h; path = Library/CameraRollView.h; sourceTree = "<group>"; };
+		40EB975318C5A30B00922A41 /* CameraRollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraRollView.m; path = Library/CameraRollView.m; sourceTree = "<group>"; };
+		40EB975618C5A34400922A41 /* CameraRollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CameraRollView.xib; path = Library/CameraRollView.xib; sourceTree = "<group>"; };
+		40EB975918C5A3A300922A41 /* btnCheck1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnCheck1.png; path = Resource/btnCheck1.png; sourceTree = "<group>"; };
+		40EB975A18C5A3A300922A41 /* btnDelete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnDelete.png; path = Resource/btnDelete.png; sourceTree = "<group>"; };
+		40EB975B18C5A3A300922A41 /* btnGarmChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGarmChecked.png; path = Resource/btnGarmChecked.png; sourceTree = "<group>"; };
+		40EB975C18C5A3A300922A41 /* btnGarmInactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGarmInactive.png; path = Resource/btnGarmInactive.png; sourceTree = "<group>"; };
+		40EB975D18C5A3A300922A41 /* btnUncheck1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnUncheck1.png; path = Resource/btnUncheck1.png; sourceTree = "<group>"; };
+		40EB975E18C5A3A300922A41 /* gallaryBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gallaryBack.png; path = Resource/gallaryBack.png; sourceTree = "<group>"; };
+		40EB975F18C5A3A300922A41 /* tablecellback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellback.png; path = Resource/tablecellback.png; sourceTree = "<group>"; };
+		40EB978518C5D19C00922A41 /* MyAlbumPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyAlbumPicker.h; path = MyAlbumPicker/MyAlbumPicker.h; sourceTree = "<group>"; };
+		40EB978618C5D19C00922A41 /* MyAlbumPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyAlbumPicker.m; path = MyAlbumPicker/MyAlbumPicker.m; sourceTree = "<group>"; };
+		40EB978A18C5D1D200922A41 /* MyAlbumPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyAlbumPicker.xib; path = MyAlbumPicker/MyAlbumPicker.xib; sourceTree = "<group>"; };
+		40EB978C18C5DB5D00922A41 /* pickerTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pickerTableCell.h; path = MyAlbumPicker/pickerTableCell.h; sourceTree = "<group>"; };
+		40EB978D18C5DB5D00922A41 /* pickerTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pickerTableCell.m; path = MyAlbumPicker/pickerTableCell.m; sourceTree = "<group>"; };
+		40EB979018C5DB7700922A41 /* pickerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = pickerTableCell.xib; path = MyAlbumPicker/pickerTableCell.xib; sourceTree = "<group>"; };
+		40EB979218C5E43B00922A41 /* tablecellforg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellforg.png; path = Resource/tablecellforg.png; sourceTree = "<group>"; };
+		40EB979418C5EB0F00922A41 /* MyImagePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyImagePickerView.xib; path = MyAlbumPicker/MyImagePickerView.xib; sourceTree = "<group>"; };
+		40EB979618C5EB4D00922A41 /* MyImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImagePicker.h; path = MyAlbumPicker/MyImagePicker.h; sourceTree = "<group>"; };
+		40EB979718C5EB4D00922A41 /* MyImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImagePicker.m; path = MyAlbumPicker/MyImagePicker.m; sourceTree = "<group>"; };
+		40EB979918C5ED5700922A41 /* ThumbImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbImage.h; path = MyAlbumPicker/ThumbImage.h; sourceTree = "<group>"; };
+		40EB979A18C5ED5700922A41 /* ThumbImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbImage.m; path = MyAlbumPicker/ThumbImage.m; sourceTree = "<group>"; };
+		40EB979C18C5ED6D00922A41 /* ThumbImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThumbImage.xib; path = MyAlbumPicker/ThumbImage.xib; sourceTree = "<group>"; };
+		40EB979E18C63AA600922A41 /* btnGallaryActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGallaryActive.png; path = Resource/btnGallaryActive.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +262,8 @@
 		40BC50AF18C46D49009B1FD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				40EB979E18C63AA600922A41 /* btnGallaryActive.png */,
+				40EB975818C5A39400922A41 /* PhotoGallory */,
 				40E3716018C56BBC00F3C6FF /* assets */,
 				40BC50CD18C47895009B1FD4 /* grey_hoodie.png */,
 				40BC50C818C47583009B1FD4 /* btnUncheck.png */,
@@ -241,6 +286,8 @@
 		40BC50D218C47B6F009B1FD4 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				40EB978418C5D10E00922A41 /* MyAlbumPicker */,
+				40EB975518C5A30F00922A41 /* CameraRollView */,
 				40B97B4B18C4CAE000EAA05F /* GarmChoose */,
 				40BC50CF18C47B6B009B1FD4 /* GarmObject.h */,
 				40BC50D018C47B6B009B1FD4 /* GarmObject.m */,
@@ -265,6 +312,50 @@
 				40E3716818C5761800F3C6FF /* Franklin Gothic Medium.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		40EB975518C5A30F00922A41 /* CameraRollView */ = {
+			isa = PBXGroup;
+			children = (
+				40EB975618C5A34400922A41 /* CameraRollView.xib */,
+				40EB975218C5A30B00922A41 /* CameraRollView.h */,
+				40EB975318C5A30B00922A41 /* CameraRollView.m */,
+			);
+			name = CameraRollView;
+			sourceTree = "<group>";
+		};
+		40EB975818C5A39400922A41 /* PhotoGallory */ = {
+			isa = PBXGroup;
+			children = (
+				40EB979218C5E43B00922A41 /* tablecellforg.png */,
+				40EB975918C5A3A300922A41 /* btnCheck1.png */,
+				40EB975A18C5A3A300922A41 /* btnDelete.png */,
+				40EB975B18C5A3A300922A41 /* btnGarmChecked.png */,
+				40EB975C18C5A3A300922A41 /* btnGarmInactive.png */,
+				40EB975D18C5A3A300922A41 /* btnUncheck1.png */,
+				40EB975E18C5A3A300922A41 /* gallaryBack.png */,
+				40EB975F18C5A3A300922A41 /* tablecellback.png */,
+			);
+			name = PhotoGallory;
+			sourceTree = "<group>";
+		};
+		40EB978418C5D10E00922A41 /* MyAlbumPicker */ = {
+			isa = PBXGroup;
+			children = (
+				40EB978518C5D19C00922A41 /* MyAlbumPicker.h */,
+				40EB978618C5D19C00922A41 /* MyAlbumPicker.m */,
+				40EB978A18C5D1D200922A41 /* MyAlbumPicker.xib */,
+				40EB978C18C5DB5D00922A41 /* pickerTableCell.h */,
+				40EB978D18C5DB5D00922A41 /* pickerTableCell.m */,
+				40EB979018C5DB7700922A41 /* pickerTableCell.xib */,
+				40EB979418C5EB0F00922A41 /* MyImagePickerView.xib */,
+				40EB979618C5EB4D00922A41 /* MyImagePicker.h */,
+				40EB979718C5EB4D00922A41 /* MyImagePicker.m */,
+				40EB979918C5ED5700922A41 /* ThumbImage.h */,
+				40EB979A18C5ED5700922A41 /* ThumbImage.m */,
+				40EB979C18C5ED6D00922A41 /* ThumbImage.xib */,
+			);
+			name = MyAlbumPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,27 +437,41 @@
 			files = (
 				40BC50C718C46D89009B1FD4 /* tshirt.png in Resources */,
 				40B4548A18C431CC0016A182 /* Images.xcassets in Resources */,
+				40EB979D18C5ED6D00922A41 /* ThumbImage.xib in Resources */,
 				40BC50C018C46D89009B1FD4 /* btnGarm.png in Resources */,
 				40BC50C118C46D89009B1FD4 /* btnOrder.png in Resources */,
 				40BC50BD18C46D89009B1FD4 /* btnCheck.png in Resources */,
+				40EB976118C5A3A300922A41 /* btnDelete.png in Resources */,
 				40BC50C518C46D89009B1FD4 /* splite.png in Resources */,
+				40EB978B18C5D1D200922A41 /* MyAlbumPicker.xib in Resources */,
 				40E3716918C5761800F3C6FF /* Aleo-Bold.otf in Resources */,
+				40EB976218C5A3A300922A41 /* btnGarmChecked.png in Resources */,
 				40BC50C918C47583009B1FD4 /* btnUncheck.png in Resources */,
 				40B4547C18C431CC0016A182 /* InfoPlist.strings in Resources */,
 				40BC50C618C46D89009B1FD4 /* TopBarBack.png in Resources */,
+				40EB976318C5A3A300922A41 /* btnGarmInactive.png in Resources */,
+				40EB976018C5A3A300922A41 /* btnCheck1.png in Resources */,
 				40BC50C418C46D89009B1FD4 /* splite_cross.png in Resources */,
 				40E3716B18C5761800F3C6FF /* Franklin Gothic Medium.ttf in Resources */,
+				40EB979118C5DB7700922A41 /* pickerTableCell.xib in Resources */,
 				40E3716318C56BC600F3C6FF /* app-bg.mp4 in Resources */,
+				40EB976518C5A3A300922A41 /* gallaryBack.png in Resources */,
 				40BC50CE18C47895009B1FD4 /* grey_hoodie.png in Resources */,
+				40EB97A118C63AA600922A41 /* btnGallaryActive.png in Resources */,
 				40B4548518C431CC0016A182 /* Main.storyboard in Resources */,
 				40BC50C218C46D89009B1FD4 /* home.png in Resources */,
+				40EB975718C5A34400922A41 /* CameraRollView.xib in Resources */,
+				40EB979318C5E43B00922A41 /* tablecellforg.png in Resources */,
 				40BC50C318C46D89009B1FD4 /* scrollBack.png in Resources */,
 				40BC50BF18C46D89009B1FD4 /* btnGallory.png in Resources */,
+				40EB976618C5A3A300922A41 /* tablecellback.png in Resources */,
+				40EB979518C5EB0F00922A41 /* MyImagePickerView.xib in Resources */,
 				40E3716A18C5761800F3C6FF /* Aleo-Regular.otf in Resources */,
 				40BC50BC18C46D89009B1FD4 /* btnBack.png in Resources */,
 				40B97B4A18C4C08D00EAA05F /* GarmChooseView.xib in Resources */,
 				40E3716418C56BC600F3C6FF /* instagarm-logo.png in Resources */,
 				40BC50BE18C46D89009B1FD4 /* btnEditgram.png in Resources */,
+				40EB976418C5A3A300922A41 /* btnUncheck1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +491,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */,
+				40EB978718C5D19C00922A41 /* MyAlbumPicker.m in Sources */,
 				40BC50CC18C475E3009B1FD4 /* ChooseInstagarmViewController.m in Sources */,
 				40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */,
 				40B4548818C431CC0016A182 /* InstagarmViewController.m in Sources */,
+				40EB978E18C5DB5D00922A41 /* pickerTableCell.m in Sources */,
+				40EB979B18C5ED5700922A41 /* ThumbImage.m in Sources */,
+				40EB979818C5EB4D00922A41 /* MyImagePicker.m in Sources */,
 				40B4547E18C431CC0016A182 /* main.m in Sources */,
 				40B4548218C431CC0016A182 /* InstagarmAppDelegate.m in Sources */,
+				40EB975418C5A30B00922A41 /* CameraRollView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

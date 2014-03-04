@@ -11,7 +11,6 @@
 @interface GarmChooseView : UIView<UIScrollViewDelegate>
 {
     NSArray *garmList;
-    BOOL isChecked;
 }
 
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollViewGarm;
@@ -21,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblPriceTitle;
 @property (strong, nonatomic) IBOutlet UILabel *lblGarm;
 @property (strong, nonatomic) IBOutlet UILabel *lblPrice;
+@property (nonatomic) BOOL isChecked;
 
 - (void)initInterface;
 - (IBAction)btnCheck:(id)sender;
