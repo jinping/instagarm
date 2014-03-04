@@ -7,22 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GarmChooseView.h"
 
-@interface ChooseInstagarmViewController : UIViewController<UIScrollViewDelegate>
-{
-    NSArray *garmList;
-    BOOL isChecked;
-}
+@interface ChooseInstagarmViewController : UIViewController
+
 @property (strong, nonatomic) IBOutlet UIButton *btnGarm;
 @property (strong, nonatomic) IBOutlet UIButton *btnGallory;
 @property (strong, nonatomic) IBOutlet UIButton *btnEditGarm;
 @property (strong, nonatomic) IBOutlet UIButton *btnOrder;
-@property (strong, nonatomic) IBOutlet UIScrollView *scrollViewGarm;
-@property (strong, nonatomic) IBOutlet UILabel *lblGarmName;
-@property (strong, nonatomic) IBOutlet UILabel *lblGarmPrice;
-@property (strong, nonatomic) IBOutlet UIButton *btnCheck;
-@property (strong, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong, nonatomic) IBOutlet UILabel *lblTitle;
 
+@property (strong, nonatomic) GarmChooseView *chooseView;
 
 - (IBAction)btnBack:(id)sender;
 - (IBAction)btnGarm:(id)sender;

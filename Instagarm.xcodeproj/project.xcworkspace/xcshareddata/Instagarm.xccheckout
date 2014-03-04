@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>022D7D51-92E7-4499-85C5-1D5866491952</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Instagarm</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>572E957F-E679-4BE4-876B-3FAB9763DC4D</key>
+		<string>https://github.com/jinping/instagarm.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Instagarm.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>572E957F-E679-4BE4-876B-3FAB9763DC4D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jinping/instagarm.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>572E957F-E679-4BE4-876B-3FAB9763DC4D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>572E957F-E679-4BE4-876B-3FAB9763DC4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Instagarm</string>
+		</dict>
+	</array>
+</dict>
+</plist>

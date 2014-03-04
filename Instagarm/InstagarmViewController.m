@@ -19,12 +19,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self customizeNavigation];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHandle)];
-    [self.view addGestureRecognizer:tap];
 }
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self customizeNavigation];
+    [self playMovie];
+    [self addLogoImage];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -34,10 +36,31 @@
 {
     [self.navigationController setNavigationBarHidden:YES];
 }
-- (void)tapHandle
+- (void)playMovie
 {
-   UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-   ChooseInstagarmViewController *CIVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"ChooseInstagarm"];
-   [self.navigationController pushViewController:CIVC animated:YES];
+    NSBundle *thisBundle = [NSBundle bundleForClass:[self class]];
+    NSString *filePath = [thisBundle pathForResource:@"app-bg" ofType:@"mp4"];
+    NSURL *url = [NSURL fileURLWithPath:filePath];
+    
+    self.mpPlayer = [[MPMoviePlayerController alloc] initWithContentURL:url];
+    [self.mpPlayer.view setFrame:CGRectMake(0, 0, 320, 568)];
+    self.mpPlayer.controlStyle = MPMovieControlStyleNone;
+    
+    [self.view addSubview:self.mpPlayer.view];
+    [self.mpPlayer play];
+}
+- (void)addLogoImage
+{
+    UIImageView *logoImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"instagarm-logo.png"]];
+    [logoImage setFrame:CGRectMake(110, 250, 100, 100)];
+    [self.view addSubview:logoImage];
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ChooseInstagarmViewController *CIVC = [mainStoryboard instantiateViewControllerWithIdentifier:@"ChooseInstagarm"];
+    [self.navigationController pushViewController:CIVC animated:YES];
+    
+    self.mpPlayer = nil;
 }
 @end

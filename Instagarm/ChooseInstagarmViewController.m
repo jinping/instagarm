@@ -8,6 +8,7 @@
 
 #import "ChooseInstagarmViewController.h"
 #import "GarmObject.h"
+#import "GarmChooseView.h"
 
 @interface ChooseInstagarmViewController ()
 
@@ -28,67 +29,37 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    GarmObject *tmp1 = [self getGarmObject:@"White Tee" garmImageName:@"tshirt.png" garmPrice:@"25.99"];
-    GarmObject *tmp2 = [self getGarmObject:@"Grey-Hoodie" garmImageName:@"grey_hoodie.png" garmPrice:@"45.99"];
-    garmList = [[NSArray alloc] initWithObjects:tmp1, tmp2, nil];
     
-    [self.scrollViewGarm setContentSize:CGSizeMake(320 * garmList.count, 367)];
-    self.scrollViewGarm.scrollsToTop = NO;
-    self.scrollViewGarm.delegate = self;
-    
-    self.pageControl.currentPage = 0;
-    self.pageControl.numberOfPages = [garmList count];
-    [self.pageControl addTarget:self action:@selector(changePage) forControlEvents:UIControlEventValueChanged];
-    
-    isChecked = NO;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self setGarmContent];
+    [self loadGarmChooseView];
+    [self.chooseView initInterface];
+    
+    [self.lblTitle setFont:[UIFont fontWithName:@"Aleo-Bold" size:19.0f]];
 }
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (GarmObject*)getGarmObject:(NSString*)garmName garmImageName:(NSString*)imageName garmPrice:(NSString*)price
+- (void)loadGarmChooseView
 {
-    GarmObject *obj = [[GarmObject alloc] init];
-    obj.garmName = garmName;
-    obj.garmImageName = imageName;
-    obj.garmPrice = price;
-    
-    if(obj.garmImageName != nil)
+    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"GarmChooseView" owner:self options:nil];
+    for(UIView *view in obj)
     {
-        obj.garmImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:obj.garmImageName]];
+        if([view isKindOfClass:[GarmChooseView class]])
+        {
+            self.chooseView = (GarmChooseView*)view;
+        }
     }
-    return obj;
-}
-- (void)setGarmContent
-{
-    for(int i = 0; i < garmList.count; i++)
-    {
-        GarmObject *obj = (GarmObject*)[garmList objectAtIndex:i];
-        [obj.garmImage setFrame:CGRectMake(i * 320 + 20, 15, 280, 337)];
-        [self.scrollViewGarm addSubview:obj.garmImage];
-    }
-}
-#pragma scrollview data
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    NSInteger currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    [self.chooseView setFrame:CGRectMake(320, 93, 320, 475)];
+    [self.view addSubview:self.chooseView];
     
-    GarmObject *obj = (GarmObject*)[garmList objectAtIndex:currentPage];
-    self.lblGarmName.text = obj.garmName;
-    self.lblGarmPrice.text = obj.garmPrice;
-    
-    //To set pagecontroll
-    self.pageControl.currentPage = currentPage;
-}
-- (void)changePage
-{
-    CGFloat x = self.pageControl.currentPage * self.scrollViewGarm.frame.size.width;
-    [self.scrollViewGarm setContentOffset:CGPointMake(x, self.scrollViewGarm.contentOffset.y)];
+    [UIView beginAnimations:@"left" context:nil];
+    [UIView animateWithDuration:0.7 animations:nil];
+    [self.chooseView setFrame:CGRectMake(0, 93, 320, 475)];
+    [UIView commitAnimations];
 }
 #pragma Actions
 - (IBAction)btnBack:(id)sender
@@ -98,7 +69,8 @@
 
 - (IBAction)btnGarm:(id)sender
 {
-    
+    [self loadGarmChooseView];
+    [self.chooseView initInterface];
 }
 
 - (IBAction)btnGallory:(id)sender {
@@ -110,17 +82,4 @@
 - (IBAction)btnOrder:(id)sender {
 }
 
-- (IBAction)btnCheck:(id)sender
-{
-    if(isChecked)
-    {
-        [self.btnCheck setImage:[UIImage imageNamed:@"btnUncheck.png"] forState:UIControlStateNormal];
-        isChecked = NO;
-    }
-    else
-    {
-        [self.btnCheck setImage:[UIImage imageNamed:@"btnCheck.png"] forState:UIControlStateNormal];
-        isChecked = YES;
-    }
-}
 @end

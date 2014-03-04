@@ -21,6 +21,11 @@
 		40B4549318C431CD0016A182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547518C431CC0016A182 /* UIKit.framework */; };
 		40B4549B18C431CD0016A182 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40B4549918C431CD0016A182 /* InfoPlist.strings */; };
 		40B4549D18C431CD0016A182 /* InstagarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B4549C18C431CD0016A182 /* InstagarmTests.m */; };
+		40B97B4118C4BDBD00EAA05F /* Aleo-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40B97B3E18C4BDBD00EAA05F /* Aleo-Bold.otf */; };
+		40B97B4218C4BDBD00EAA05F /* Aleo-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 40B97B3F18C4BDBD00EAA05F /* Aleo-Regular.otf */; };
+		40B97B4318C4BDBD00EAA05F /* Franklin Gothic Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40B97B4018C4BDBD00EAA05F /* Franklin Gothic Medium.ttf */; };
+		40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B97B4518C4C06400EAA05F /* GarmChooseView.m */; };
+		40B97B4A18C4C08D00EAA05F /* GarmChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B97B4918C4C08D00EAA05F /* GarmChooseView.xib */; };
 		40BC50BC18C46D89009B1FD4 /* btnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BC50B018C46D89009B1FD4 /* btnBack.png */; };
 		40BC50BD18C46D89009B1FD4 /* btnCheck.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BC50B118C46D89009B1FD4 /* btnCheck.png */; };
 		40BC50BE18C46D89009B1FD4 /* btnEditgram.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BC50B218C46D89009B1FD4 /* btnEditgram.png */; };
@@ -37,6 +42,8 @@
 		40BC50CC18C475E3009B1FD4 /* ChooseInstagarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC50CB18C475E3009B1FD4 /* ChooseInstagarmViewController.m */; };
 		40BC50CE18C47895009B1FD4 /* grey_hoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BC50CD18C47895009B1FD4 /* grey_hoodie.png */; };
 		40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 40BC50D018C47B6B009B1FD4 /* GarmObject.m */; };
+		40E3716318C56BC600F3C6FF /* app-bg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 40E3716118C56BC600F3C6FF /* app-bg.mp4 */; };
+		40E3716418C56BC600F3C6FF /* instagarm-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 40E3716218C56BC600F3C6FF /* instagarm-logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +76,12 @@
 		40B4549818C431CD0016A182 /* InstagarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstagarmTests-Info.plist"; sourceTree = "<group>"; };
 		40B4549A18C431CD0016A182 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40B4549C18C431CD0016A182 /* InstagarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagarmTests.m; sourceTree = "<group>"; };
+		40B97B3E18C4BDBD00EAA05F /* Aleo-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aleo-Bold.otf"; path = "../../../2014-03-02 SongBai/Instagarm/Instagarm/Fonts/Aleo-Bold.otf"; sourceTree = "<group>"; };
+		40B97B3F18C4BDBD00EAA05F /* Aleo-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aleo-Regular.otf"; path = "../../../2014-03-02 SongBai/Instagarm/Instagarm/Fonts/Aleo-Regular.otf"; sourceTree = "<group>"; };
+		40B97B4018C4BDBD00EAA05F /* Franklin Gothic Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Franklin Gothic Medium.ttf"; path = "../../../2014-03-02 SongBai/Instagarm/Instagarm/Fonts/Franklin Gothic Medium.ttf"; sourceTree = "<group>"; };
+		40B97B4418C4C06400EAA05F /* GarmChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmChooseView.h; path = Library/GarmChooseView.h; sourceTree = "<group>"; };
+		40B97B4518C4C06400EAA05F /* GarmChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmChooseView.m; path = Library/GarmChooseView.m; sourceTree = "<group>"; };
+		40B97B4918C4C08D00EAA05F /* GarmChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GarmChooseView.xib; path = Library/GarmChooseView.xib; sourceTree = "<group>"; };
 		40BC50B018C46D89009B1FD4 /* btnBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnBack.png; path = Resource/btnBack.png; sourceTree = "<group>"; };
 		40BC50B118C46D89009B1FD4 /* btnCheck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnCheck.png; path = Resource/btnCheck.png; sourceTree = "<group>"; };
 		40BC50B218C46D89009B1FD4 /* btnEditgram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnEditgram.png; path = Resource/btnEditgram.png; sourceTree = "<group>"; };
@@ -87,6 +100,8 @@
 		40BC50CD18C47895009B1FD4 /* grey_hoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grey_hoodie.png; path = Resource/grey_hoodie.png; sourceTree = "<group>"; };
 		40BC50CF18C47B6B009B1FD4 /* GarmObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmObject.h; path = Library/GarmObject.h; sourceTree = "<group>"; };
 		40BC50D018C47B6B009B1FD4 /* GarmObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmObject.m; path = Library/GarmObject.m; sourceTree = "<group>"; };
+		40E3716118C56BC600F3C6FF /* app-bg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "app-bg.mp4"; path = "Resource/assets/app-bg.mp4"; sourceTree = "<group>"; };
+		40E3716218C56BC600F3C6FF /* instagarm-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "instagarm-logo.png"; path = "Resource/assets/instagarm-logo.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +161,7 @@
 		40B4547718C431CC0016A182 /* Instagarm */ = {
 			isa = PBXGroup;
 			children = (
+				40B97B3D18C4BDB100EAA05F /* Fonts */,
 				40BC50D218C47B6F009B1FD4 /* Library */,
 				40BC50AF18C46D49009B1FD4 /* Resource */,
 				40B4548018C431CC0016A182 /* InstagarmAppDelegate.h */,
@@ -190,9 +206,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40B97B3D18C4BDB100EAA05F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				40B97B3E18C4BDBD00EAA05F /* Aleo-Bold.otf */,
+				40B97B3F18C4BDBD00EAA05F /* Aleo-Regular.otf */,
+				40B97B4018C4BDBD00EAA05F /* Franklin Gothic Medium.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		40B97B4B18C4CAE000EAA05F /* GarmChoose */ = {
+			isa = PBXGroup;
+			children = (
+				40B97B4418C4C06400EAA05F /* GarmChooseView.h */,
+				40B97B4518C4C06400EAA05F /* GarmChooseView.m */,
+				40B97B4918C4C08D00EAA05F /* GarmChooseView.xib */,
+			);
+			name = GarmChoose;
+			sourceTree = "<group>";
+		};
 		40BC50AF18C46D49009B1FD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				40E3716018C56BBC00F3C6FF /* assets */,
 				40BC50CD18C47895009B1FD4 /* grey_hoodie.png */,
 				40BC50C818C47583009B1FD4 /* btnUncheck.png */,
 				40BC50B018C46D89009B1FD4 /* btnBack.png */,
@@ -214,10 +251,20 @@
 		40BC50D218C47B6F009B1FD4 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				40B97B4B18C4CAE000EAA05F /* GarmChoose */,
 				40BC50CF18C47B6B009B1FD4 /* GarmObject.h */,
 				40BC50D018C47B6B009B1FD4 /* GarmObject.m */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		40E3716018C56BBC00F3C6FF /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				40E3716118C56BC600F3C6FF /* app-bg.mp4 */,
+				40E3716218C56BC600F3C6FF /* instagarm-logo.png */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,12 +354,18 @@
 				40B4547C18C431CC0016A182 /* InfoPlist.strings in Resources */,
 				40BC50C618C46D89009B1FD4 /* TopBarBack.png in Resources */,
 				40BC50C418C46D89009B1FD4 /* splite_cross.png in Resources */,
+				40E3716318C56BC600F3C6FF /* app-bg.mp4 in Resources */,
 				40BC50CE18C47895009B1FD4 /* grey_hoodie.png in Resources */,
 				40B4548518C431CC0016A182 /* Main.storyboard in Resources */,
 				40BC50C218C46D89009B1FD4 /* home.png in Resources */,
 				40BC50C318C46D89009B1FD4 /* scrollBack.png in Resources */,
 				40BC50BF18C46D89009B1FD4 /* btnGallory.png in Resources */,
+				40B97B4118C4BDBD00EAA05F /* Aleo-Bold.otf in Resources */,
 				40BC50BC18C46D89009B1FD4 /* btnBack.png in Resources */,
+				40B97B4A18C4C08D00EAA05F /* GarmChooseView.xib in Resources */,
+				40E3716418C56BC600F3C6FF /* instagarm-logo.png in Resources */,
+				40B97B4218C4BDBD00EAA05F /* Aleo-Regular.otf in Resources */,
+				40B97B4318C4BDBD00EAA05F /* Franklin Gothic Medium.ttf in Resources */,
 				40BC50BE18C46D89009B1FD4 /* btnEditgram.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */,
 				40BC50CC18C475E3009B1FD4 /* ChooseInstagarmViewController.m in Sources */,
 				40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */,
 				40B4548818C431CC0016A182 /* InstagarmViewController.m in Sources */,
