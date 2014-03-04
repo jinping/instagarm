@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyAlbumPicker.h"
 
 @interface GarmChooseView : UIView<UIScrollViewDelegate>
 {
@@ -21,7 +22,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblGarm;
 @property (strong, nonatomic) IBOutlet UILabel *lblPrice;
 @property (nonatomic) BOOL isChecked;
-
+@property (strong, nonatomic) MyAlbumPicker *albumPicker;
 - (void)initInterface;
 - (IBAction)btnCheck:(id)sender;
 

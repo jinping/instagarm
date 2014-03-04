@@ -39,7 +39,8 @@
     [self.chooseView initInterface];
     self.chooseView.tag = 1000;
     
-    [self.lblTitle setFont:[UIFont fontWithName:@"Aleo-Bold" size:19.0f]];
+    [self.lblTitle setFont:[UIFont fontWithName:@"Aleo-Bold" size:17.0f]];
+    [self.lblTitle setTextColor:[UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]];
 }
 - (void)didReceiveMemoryWarning
 {
@@ -65,12 +66,12 @@
             self.chooseView = (GarmChooseView*)view;
         }
     }
-    [self.chooseView setFrame:CGRectMake(320, 93, 320, 475)];
+    [self.chooseView setFrame:CGRectMake(320, 88, 320, 480)];
     [self.view addSubview:self.chooseView];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [self.chooseView setFrame:CGRectMake(0, 93, 320, 475)];
+    [self.chooseView setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
 }
 - (void)loadAlbumPicker
@@ -84,12 +85,12 @@
             break;
         }
     }
-    [self.albumPicker setFrame:CGRectMake(320, 93, 320, 475)];
+    [self.albumPicker setFrame:CGRectMake(320, 88, 320, 480)];
     [self.view addSubview:self.albumPicker];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [self.albumPicker setFrame:CGRectMake(0, 93, 320, 475)];
+    [self.albumPicker setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
 }
 
@@ -104,12 +105,12 @@
             break;
         }
     }
-    [self.cameraRollView setFrame:CGRectMake(320, 93, 320, 475)];
+    [self.cameraRollView setFrame:CGRectMake(320, 88, 320, 480)];
     [self.view addSubview:self.cameraRollView];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [self.cameraRollView setFrame:CGRectMake(0, 93, 320, 475)];
+    [self.cameraRollView setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
 }
 - (void)removeSubViews
@@ -147,20 +148,20 @@
 
 - (IBAction)btnGarm:(id)sender
 {
-    [self removeSubViews];
-    [self loadGarmChooseView];
-    [self.chooseView initInterface];
-    self.chooseView.tag = 1000;
+//    [self removeSubViews];
+//    [self loadGarmChooseView];
+//    [self.chooseView initInterface];
+//    self.chooseView.tag = 1000;
 }
 
 - (IBAction)btnGallory:(id)sender
 {
-    [self removeSubViews];
-    [self loadAlbumPicker];
-    [self.albumPicker initInterface];
-    self.albumPicker.tag = 1001;
-    [self setButtonStatus];
-    [self.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
+//    [self removeSubViews];
+//    [self loadAlbumPicker];
+//    [self.albumPicker initInterface];
+//    self.albumPicker.tag = 1001;
+//    [self setButtonStatus];
+//    [self.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
     
 }
 

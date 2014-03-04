@@ -10,6 +10,8 @@
 #import "GarmObject.h"
 #import "InstagarmAppDelegate.h"
 #import "ChooseInstagarmViewController.h"
+#import "CameraRollView.h"
+#import "MyAlbumPicker.h"
 
 @implementation GarmChooseView
 
@@ -39,10 +41,15 @@
     
     [self setGarmContent];
     
-    [self.lblGarm setFont:[UIFont fontWithName:@"Aleo-Regular" size:22.0f]];
-    [self.lblPrice setFont:[UIFont fontWithName:@"Aleo-Regular" size:22.0f]];
-    [self.lblGarmTitle setFont:[UIFont fontWithName:@"Franklin Gothic Medium" size:11.0f]];
-    [self.lblPriceTitle setFont:[UIFont fontWithName:@"Franklin Gothic Medium" size:11.0f]];
+    UIColor *textColor = [UIColor colorWithRed:51.0 / 255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0];
+    [self.lblGarm setFont:[UIFont fontWithName:@"Aleo-Regular" size:17.0f]];
+    [self.lblGarm setTextColor:textColor];
+    [self.lblPrice setFont:[UIFont fontWithName:@"Aleo-Regular" size:17.0f]];
+    [self.lblPrice setTextColor:textColor];
+    [self.lblGarmTitle setFont:[UIFont fontWithName:@"Franklin Gothic Medium" size:9.0f]];
+    [self.lblGarmTitle setTextColor:textColor];
+    [self.lblPriceTitle setFont:[UIFont fontWithName:@"Franklin Gothic Medium" size:9.0f]];
+    [self.lblPriceTitle setTextColor:textColor];
 }
 
 
@@ -64,7 +71,7 @@
     for(int i = 0; i < garmList.count; i++)
     {
         GarmObject *obj = (GarmObject*)[garmList objectAtIndex:i];
-        [obj.garmImage setFrame:CGRectMake(i * 320 + 25*(i+1), 15, 320 - 25*(i +1) * 2, 337)];
+        [obj.garmImage setFrame:CGRectMake(i * 320 + 20*(i+1), 15, 320 - 20*(i +1) * 2, 357)];
         [self.scrollViewGarm addSubview:obj.garmImage];
     }
 }
@@ -74,8 +81,8 @@
     NSInteger currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
     
     GarmObject *obj = (GarmObject*)[garmList objectAtIndex:currentPage];
-    self.lblGarm.text = [NSString stringWithFormat:@"£%@", obj.garmName];
-    self.lblPrice.text = [NSString stringWithFormat:@"£%@", obj.garmPrice];
+    self.lblGarm.text = [NSString stringWithFormat:@"%@", obj.garmName];
+    self.lblPrice.text = [NSString stringWithFormat:@"%@", obj.garmPrice];
     
     //To set pagecontroll
     self.pageControl.currentPage = currentPage;
@@ -99,10 +106,46 @@
         [self.btnCheck setImage:[UIImage imageNamed:@"btnCheck.png"] forState:UIControlStateNormal];
         self.isChecked = YES;
         [btnStatus setBool:YES forKey:@"GarmChoose"];
+        
+        
+        [self removeSubView];
+        [self loadAlbumPicker];
+        [self.albumPicker initInterface];
+        self.albumPicker.tag = 1001;
+        ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+        [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
+        [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarmChecked.png"] forState:UIControlStateNormal];
     }
     [btnStatus synchronize];
-
+    
+    
 }
+- (void)removeSubView
+{
+    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+    [civc removeSubViews];
+}
+- (void)loadAlbumPicker
+{
+    
+    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"MyAlbumPicker" owner:self options:nil];
+    for(UIView *view in obj)
+    {
+        if([view isKindOfClass:[MyAlbumPicker class]])
+        {
+            self.albumPicker = (MyAlbumPicker*)view;
+            break;
+        }
+    }
+    [self.albumPicker setFrame:CGRectMake(320, 88, 320, 480)];
+    [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:self.albumPicker];
+    
+    [UIView beginAnimations:@"left" context:nil];
+    [UIView animateWithDuration:1.0 animations:nil];
+    [self.albumPicker setFrame:CGRectMake(0, 88, 320, 480)];
+    [UIView commitAnimations];
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
