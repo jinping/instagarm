@@ -41,6 +41,11 @@
     
     [self.lblTitle setFont:[UIFont fontWithName:@"Aleo-Bold" size:17.0f]];
     [self.lblTitle setTextColor:[UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]];
+    NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
+    
+    BOOL btnGarmStatus = [btnStatus boolForKey:@"GarmChoose"];
+    [self.btnGarm setImage:[UIImage imageNamed:(btnGarmStatus?@"btnGarmChecked.png":@"btnGarm.png")] forState:UIControlStateNormal];
+    
 }
 - (void)didReceiveMemoryWarning
 {
@@ -148,20 +153,20 @@
 
 - (IBAction)btnGarm:(id)sender
 {
-//    [self removeSubViews];
-//    [self loadGarmChooseView];
-//    [self.chooseView initInterface];
-//    self.chooseView.tag = 1000;
+    [self removeSubViews];
+    [self loadGarmChooseView];
+    [self.chooseView initInterface];
+    self.chooseView.tag = 1000;
 }
 
 - (IBAction)btnGallory:(id)sender
 {
-//    [self removeSubViews];
-//    [self loadAlbumPicker];
-//    [self.albumPicker initInterface];
-//    self.albumPicker.tag = 1001;
-//    [self setButtonStatus];
-//    [self.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
+    [self removeSubViews];
+    [self loadAlbumPicker];
+    [self.albumPicker initInterface];
+    self.albumPicker.tag = 1001;
+    [self setButtonStatus];
+    [self.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
     
 }
 

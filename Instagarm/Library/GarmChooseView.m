@@ -50,6 +50,11 @@
     [self.lblGarmTitle setTextColor:textColor];
     [self.lblPriceTitle setFont:[UIFont fontWithName:@"Franklin Gothic Medium" size:9.0f]];
     [self.lblPriceTitle setTextColor:textColor];
+    
+    NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
+    BOOL btnGarmStatus = [btnStatus boolForKey:@"GarmChoose"];
+    [self.btnCheck setImage:[UIImage imageNamed:(btnGarmStatus?@"btnCheck.png":@"btnUncheck.png")] forState:UIControlStateNormal];
+    self.isChecked = btnGarmStatus;
 }
 
 
@@ -95,11 +100,13 @@
 - (IBAction)btnCheck:(id)sender
 {
     NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
+    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
     if(self.isChecked)
     {
         [self.btnCheck setImage:[UIImage imageNamed:@"btnUncheck.png"] forState:UIControlStateNormal];
         self.isChecked = NO;
         [btnStatus setBool:NO forKey:@"GarmChoose"];
+        [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarm.png"] forState:UIControlStateNormal];
     }
     else
     {
@@ -112,7 +119,7 @@
         [self loadAlbumPicker];
         [self.albumPicker initInterface];
         self.albumPicker.tag = 1001;
-        ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+        
         [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
         [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarmChecked.png"] forState:UIControlStateNormal];
     }

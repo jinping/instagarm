@@ -14,7 +14,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnCheck;
 @property (strong, nonatomic) IBOutlet UIButton *btnDelete;
 @property (strong, nonatomic) IBOutlet UIImageView *selectedImageView;
-@property (strong, nonatomic) MyAlbumPicker *albumPicker;
 @property (nonatomic) BOOL isChecked;
 
 - (IBAction)btnCheck:(id)sender;

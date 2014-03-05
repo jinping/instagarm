@@ -7,7 +7,9 @@
 //
 
 #import "MyImagePicker.h"
-#import "ThumbImage.h"
+#import "ThumbTableCell.h"
+#import "CameraRollView.h"
+#import "InstagarmAppDelegate.h"
 
 @implementation MyImagePicker
 
@@ -23,6 +25,8 @@
 {
     self.assetArray = [[NSMutableArray alloc] init];
     [self preparePhotos];
+    self.thumbTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
 }
 - (void)preparePhotos
 {
@@ -37,49 +41,95 @@
              {
                  [self.assetArray addObject:result];
              }
+             [self performSelectorOnMainThread:@selector(reloadTableView) withObject:nil waitUntilDone:YES];
         }];
         
     }
-   [self.pickerScrollView setContentSize:CGSizeMake(320, self.assetArray.count * 105 / 3)];
-   [self loadPhotos:self.assetArray];
-   
 }
-- (void)loadPhotos:(NSMutableArray*)assetArray
+- (void)reloadTableView
 {
-    for(int i= 0; i < assetArray.count; i++)
-    {
-        ALAsset *asset = (ALAsset*)[assetArray objectAtIndex:i];
-        ThumbImage *thumb = [self getThumbImage];
-        
-        thumb.thumbImage.image = [UIImage imageWithCGImage:[asset thumbnail]];
-        ALAssetRepresentation *rawImage = [asset defaultRepresentation];
-        thumb.fullImage = [UIImage imageWithCGImage:[rawImage fullScreenImage]];
-        NSInteger idxX = i % 3;
-        NSInteger idxY = round(i / 3);
-        [thumb setFrame:CGRectMake(idxX * 105 + (idxX != 0?2.5 * idxX:0), idxY * 105 + idxY * 2, 105, 105)];
-        thumb.tag = i;
-        [self.pickerScrollView addSubview:thumb];
-        rawImage = nil;
-    }
-    self.assetArray = nil;
-}
-- (ThumbImage*)getThumbImage
-{
-    ThumbImage *thumb;
-    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"ThumbImage" owner:self options:nil];
-    for(UIView *view in obj)
-    {
-        if([view isKindOfClass:[ThumbImage class]])
-        {
-            thumb = (ThumbImage*)view;
-            break;
-        }
-    }
-    return thumb;
+    [self.thumbTableView reloadData];
 }
 - (void)dealloc
 {
     self.assetArray = nil;
+}
+#pragma NSNotification
+- (void)setSelectImage:(NSDictionary*)userInfo
+{
+    
+    NSInteger selectedIndex = [[userInfo valueForKey:@"Index"] integerValue];
+    
+    ALAsset *asset = (ALAsset*)[self.assetArray objectAtIndex:selectedIndex];
+    ALAssetRepresentation *rawImage = [asset defaultRepresentation];
+    UIImage *image = [UIImage imageWithCGImage:[rawImage fullScreenImage]];
+    
+    [self loadCameraRollView:image];
+}
+- (void)loadCameraRollView:(UIImage*)image
+{
+    CameraRollView *cameraRollView;
+    
+    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"CameraRollView" owner:self options:nil];
+    for(UIView *view in obj)
+    {
+        if([view isKindOfClass:[CameraRollView class]])
+        {
+            cameraRollView = (CameraRollView*)view;
+            break;
+        }
+    }
+    cameraRollView.selectedImageView.image = image;
+    [cameraRollView setFrame:CGRectMake(320, 88, 320, 480)];
+    cameraRollView.tag = 1003;
+    [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:cameraRollView];
+    [cameraRollView initInterface];
+    
+    [UIView beginAnimations:@"left" context:nil];
+    [UIView animateWithDuration:1.0 animations:nil];
+    [cameraRollView setFrame:CGRectMake(0, 88, 320, 480)];
+    [UIView commitAnimations];
+    
+    
+}
+
+- (NSArray *)assetsForIndexPath:(NSIndexPath *)path
+{
+    long index = path.row * 3;
+    long length = MIN(3, [self.assetArray count] - index);
+    return [self.assetArray subarrayWithRange:NSMakeRange(index, length)];
+}
+
+#pragma Tableview datasource and delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return round(self.assetArray.count/3);
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 107.0f;
+}
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"ThumbTableCell";
+    ThumbTableCell *cell = (ThumbTableCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        NSArray *topObjects = [[NSBundle mainBundle] loadNibNamed:CellIdentifier owner:self options:nil];
+        for (id obj in topObjects) {
+            if ([obj isKindOfClass:[ThumbTableCell class]]){
+                cell = (ThumbTableCell*)obj;
+                break;
+            }
+        }
+    }
+    cell.indexPath = indexPath;
+    cell.parent = self;
+    [cell setAsset:[self assetsForIndexPath:indexPath]];
+    return cell;
 }
 /*
 // Only override drawRect: if you perform custom drawing.

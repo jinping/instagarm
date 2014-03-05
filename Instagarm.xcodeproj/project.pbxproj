@@ -60,9 +60,9 @@
 		40EB979318C5E43B00922A41 /* tablecellforg.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979218C5E43B00922A41 /* tablecellforg.png */; };
 		40EB979518C5EB0F00922A41 /* MyImagePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979418C5EB0F00922A41 /* MyImagePickerView.xib */; };
 		40EB979818C5EB4D00922A41 /* MyImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB979718C5EB4D00922A41 /* MyImagePicker.m */; };
-		40EB979B18C5ED5700922A41 /* ThumbImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB979A18C5ED5700922A41 /* ThumbImage.m */; };
-		40EB979D18C5ED6D00922A41 /* ThumbImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979C18C5ED6D00922A41 /* ThumbImage.xib */; };
 		40EB97A118C63AA600922A41 /* btnGallaryActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979E18C63AA600922A41 /* btnGallaryActive.png */; };
+		40EB97A618C7014C00922A41 /* ThumbTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB97A518C7014C00922A41 /* ThumbTableCell.m */; };
+		40EB97A818C7016D00922A41 /* ThumbTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB97A718C7016D00922A41 /* ThumbTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,10 +141,10 @@
 		40EB979418C5EB0F00922A41 /* MyImagePickerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyImagePickerView.xib; path = MyAlbumPicker/MyImagePickerView.xib; sourceTree = "<group>"; };
 		40EB979618C5EB4D00922A41 /* MyImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyImagePicker.h; path = MyAlbumPicker/MyImagePicker.h; sourceTree = "<group>"; };
 		40EB979718C5EB4D00922A41 /* MyImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyImagePicker.m; path = MyAlbumPicker/MyImagePicker.m; sourceTree = "<group>"; };
-		40EB979918C5ED5700922A41 /* ThumbImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbImage.h; path = MyAlbumPicker/ThumbImage.h; sourceTree = "<group>"; };
-		40EB979A18C5ED5700922A41 /* ThumbImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbImage.m; path = MyAlbumPicker/ThumbImage.m; sourceTree = "<group>"; };
-		40EB979C18C5ED6D00922A41 /* ThumbImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThumbImage.xib; path = MyAlbumPicker/ThumbImage.xib; sourceTree = "<group>"; };
 		40EB979E18C63AA600922A41 /* btnGallaryActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGallaryActive.png; path = Resource/btnGallaryActive.png; sourceTree = "<group>"; };
+		40EB97A418C7014C00922A41 /* ThumbTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbTableCell.h; path = MyAlbumPicker/ThumbTableCell.h; sourceTree = "<group>"; };
+		40EB97A518C7014C00922A41 /* ThumbTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbTableCell.m; path = MyAlbumPicker/ThumbTableCell.m; sourceTree = "<group>"; };
+		40EB97A718C7016D00922A41 /* ThumbTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThumbTableCell.xib; path = MyAlbumPicker/ThumbTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -351,9 +351,9 @@
 				40EB979418C5EB0F00922A41 /* MyImagePickerView.xib */,
 				40EB979618C5EB4D00922A41 /* MyImagePicker.h */,
 				40EB979718C5EB4D00922A41 /* MyImagePicker.m */,
-				40EB979918C5ED5700922A41 /* ThumbImage.h */,
-				40EB979A18C5ED5700922A41 /* ThumbImage.m */,
-				40EB979C18C5ED6D00922A41 /* ThumbImage.xib */,
+				40EB97A418C7014C00922A41 /* ThumbTableCell.h */,
+				40EB97A518C7014C00922A41 /* ThumbTableCell.m */,
+				40EB97A718C7016D00922A41 /* ThumbTableCell.xib */,
 			);
 			name = MyAlbumPicker;
 			sourceTree = "<group>";
@@ -437,7 +437,6 @@
 			files = (
 				40BC50C718C46D89009B1FD4 /* tshirt.png in Resources */,
 				40B4548A18C431CC0016A182 /* Images.xcassets in Resources */,
-				40EB979D18C5ED6D00922A41 /* ThumbImage.xib in Resources */,
 				40BC50C018C46D89009B1FD4 /* btnGarm.png in Resources */,
 				40BC50C118C46D89009B1FD4 /* btnOrder.png in Resources */,
 				40BC50BD18C46D89009B1FD4 /* btnCheck.png in Resources */,
@@ -462,6 +461,7 @@
 				40BC50C218C46D89009B1FD4 /* home.png in Resources */,
 				40EB975718C5A34400922A41 /* CameraRollView.xib in Resources */,
 				40EB979318C5E43B00922A41 /* tablecellforg.png in Resources */,
+				40EB97A818C7016D00922A41 /* ThumbTableCell.xib in Resources */,
 				40BC50C318C46D89009B1FD4 /* scrollBack.png in Resources */,
 				40BC50BF18C46D89009B1FD4 /* btnGallory.png in Resources */,
 				40EB976618C5A3A300922A41 /* tablecellback.png in Resources */,
@@ -496,7 +496,7 @@
 				40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */,
 				40B4548818C431CC0016A182 /* InstagarmViewController.m in Sources */,
 				40EB978E18C5DB5D00922A41 /* pickerTableCell.m in Sources */,
-				40EB979B18C5ED5700922A41 /* ThumbImage.m in Sources */,
+				40EB97A618C7014C00922A41 /* ThumbTableCell.m in Sources */,
 				40EB979818C5EB4D00922A41 /* MyImagePicker.m in Sources */,
 				40B4547E18C431CC0016A182 /* main.m in Sources */,
 				40B4548218C431CC0016A182 /* InstagarmAppDelegate.m in Sources */,

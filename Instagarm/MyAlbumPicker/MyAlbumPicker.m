@@ -91,7 +91,7 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 100;
+    return 86;
 }
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -117,7 +117,6 @@
     [cell.lblTitle setFont:[UIFont fontWithName:@"Aleo-regular" size:17.0f]];
     
     [cell.imageView setImage:[UIImage imageWithCGImage:[(ALAssetsGroup*)[self.assetGroups objectAtIndex:indexPath.row] posterImage]]];
-	[cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
 	
     return cell;
 
@@ -138,15 +137,14 @@
     [imagePicker.assetGroup setAssetsFilter:[ALAssetsFilter allPhotos]];
     [imagePicker initInterface];
     
-    [imagePicker setFrame:CGRectMake(320, 95, 320, 473)];
+    [imagePicker setFrame:CGRectMake(320, 88, 320, 480)];
     [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:imagePicker];
     imagePicker.tag = 1002;
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [imagePicker setFrame:CGRectMake(0, 95, 320, 473)];
+    [imagePicker setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
-    [self removeFromSuperview];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

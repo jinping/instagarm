@@ -20,22 +20,9 @@
 }
 - (void)initInterface
 {
-    [self loadAlbumPicker];
-}
-- (void)loadAlbumPicker
-{
-    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"MyAlbumPicker" owner:self options:nil];
-    for(UIView *view in obj)
-    {
-        if([view isKindOfClass:[MyAlbumPicker class]])
-        {
-            self.albumPicker = (MyAlbumPicker*)view;
-            break;
-        }
-    }
-    [self.albumPicker setFrame:CGRectMake(0, 7, 320, 390)];
-    [self addSubview:self.albumPicker];
-    [self.albumPicker initInterface];
+    NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
+    BOOL btnPhotoCheck = [btnStatus boolForKey:@"Photo"];
+    [self.btnCheck setImage:[UIImage imageNamed:(btnPhotoCheck?@"btnCheck1.png":@"btnUncheck1.png")] forState:UIControlStateNormal];
 }
 #pragma Actions
 - (IBAction)btnCheck:(id)sender
