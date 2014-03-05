@@ -55,10 +55,10 @@
     self.assetArray = nil;
 }
 #pragma NSNotification
-- (void)setSelectImage:(NSDictionary*)userInfo
+- (void)setSelectImage:(NSInteger)index
 {
     
-    NSInteger selectedIndex = [[userInfo valueForKey:@"Index"] integerValue];
+    NSInteger selectedIndex = index;
     
     ALAsset *asset = (ALAsset*)[self.assetArray objectAtIndex:selectedIndex];
     ALAssetRepresentation *rawImage = [asset defaultRepresentation];

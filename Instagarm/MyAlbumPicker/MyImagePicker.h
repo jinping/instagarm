@@ -15,6 +15,6 @@
 @property (strong, nonatomic) IBOutlet UITableView *thumbTableView;
 
 - (void)initInterface;
-- (void)setSelectImage:(NSDictionary*)userInfo;
+- (void)setSelectImage:(NSInteger)index;
 
 @end

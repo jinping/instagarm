@@ -122,7 +122,6 @@
 - (IBAction)btnBack:(id)sender
 {
     NSInteger count = [self.view.subviews count];
-    NSLog(@"count=%d", count);
     
     UIView *view = self.view.subviews[count - 1];
     if(![view isKindOfClass:[GarmChooseView class]])

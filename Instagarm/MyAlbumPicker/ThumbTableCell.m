@@ -84,7 +84,7 @@
     {
         index = self.indexPath.row * 3 + 2;
     }
-    NSDictionary *userInfo = [[NSDictionary alloc] initWithObjectsAndKeys:[NSString stringWithFormat:@"%d", index],@"Index", nil];
-    [self.parent setSelectImage:userInfo];
+    
+    [self.parent setSelectImage:index];
 }
 @end
