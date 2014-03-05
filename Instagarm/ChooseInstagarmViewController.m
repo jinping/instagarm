@@ -118,55 +118,41 @@
     [self.cameraRollView setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
 }
-- (void)removeSubViews
-{
-    GarmChooseView *chooseView = (GarmChooseView*)[self.view viewWithTag:1000];
-    if(chooseView)
-    {
-        [chooseView removeFromSuperview];
-    }
-    MyAlbumPicker *picker = (MyAlbumPicker*)[self.view viewWithTag:1001];
-    if(picker)
-    {
-        for(UIView *view in picker.subviews)
-        {
-            [view removeFromSuperview];
-        }
-        [picker removeFromSuperview];
-    }
-    MyImagePicker *imagePicker = (MyImagePicker*)[self.view viewWithTag:1002];
-    if(imagePicker)
-    {
-        [imagePicker removeFromSuperview];
-    }
-    CameraRollView *cameraView = (CameraRollView*)[self.view viewWithTag:1003];
-    if(cameraView)
-    {
-        [cameraView removeFromSuperview];
-    }
-}
 #pragma Actions
 - (IBAction)btnBack:(id)sender
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    NSInteger count = [self.view.subviews count];
+    NSLog(@"count=%d", count);
+    
+    UIView *view = self.view.subviews[count - 1];
+    if(![view isKindOfClass:[GarmChooseView class]])
+    {
+        [UIView beginAnimations:@"right" context:nil];
+        [UIView animateWithDuration:1.0 animations:nil];
+        CGRect rect = view.frame;
+        [view setFrame:CGRectMake(-320, rect.origin.y, rect.size.width, rect.size.height)];
+        [UIView commitAnimations];
+        [self performSelector:@selector(removeFromParent:) withObject:view afterDelay:1.0];
+    }
 }
-
+- (void)removeFromParent:(UIView*)view
+{
+    [view removeFromSuperview];
+}
 - (IBAction)btnGarm:(id)sender
 {
-    [self removeSubViews];
-    [self loadGarmChooseView];
-    [self.chooseView initInterface];
-    self.chooseView.tag = 1000;
+//    [self loadGarmChooseView];
+//    [self.chooseView initInterface];
+//    self.chooseView.tag = 1000;
 }
 
 - (IBAction)btnGallory:(id)sender
 {
-    [self removeSubViews];
-    [self loadAlbumPicker];
-    [self.albumPicker initInterface];
-    self.albumPicker.tag = 1001;
-    [self setButtonStatus];
-    [self.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
+//    [self loadAlbumPicker];
+//    [self.albumPicker initInterface];
+//    self.albumPicker.tag = 1001;
+//    [self setButtonStatus];
+//    [self.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
     
 }
 

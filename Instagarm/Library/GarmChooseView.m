@@ -54,7 +54,7 @@
     
     NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
     BOOL btnGarmStatus = [btnStatus boolForKey:@"GarmChoose"];
-    [self.btnCheck setImage:[UIImage imageNamed:(btnGarmStatus?@"btnCheck.png":@"btnUncheck.png")] forState:UIControlStateNormal];
+
     self.isChecked = btnGarmStatus;
 }
 
@@ -102,36 +102,18 @@
 {
     NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
     ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
-    if(self.isChecked)
-    {
-        [self.btnCheck setImage:[UIImage imageNamed:@"btnUncheck.png"] forState:UIControlStateNormal];
-        self.isChecked = NO;
-        [btnStatus setBool:NO forKey:@"GarmChoose"];
-        [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarm.png"] forState:UIControlStateNormal];
-    }
-    else
-    {
-        [self.btnCheck setImage:[UIImage imageNamed:@"btnCheck.png"] forState:UIControlStateNormal];
-        self.isChecked = YES;
-        [btnStatus setBool:YES forKey:@"GarmChoose"];
+
+    self.isChecked = YES;
+    [btnStatus setBool:YES forKey:@"GarmChoose"];
+
+    [self loadAlbumPicker];
+    [self.albumPicker initInterface];
+    self.albumPicker.tag = 1001;
         
-        
-        [self removeSubView];
-        [self loadAlbumPicker];
-        [self.albumPicker initInterface];
-        self.albumPicker.tag = 1001;
-        
-        [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
-        [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarmChecked.png"] forState:UIControlStateNormal];
-    }
+    [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
+    [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarmChecked.png"] forState:UIControlStateNormal];
+    
     [btnStatus synchronize];
-    
-    
-}
-- (void)removeSubView
-{
-    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
-    [civc removeSubViews];
 }
 - (void)loadAlbumPicker
 {

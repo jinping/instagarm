@@ -62,7 +62,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJG-vi-0ZW">
-                                <rect key="frame" x="20" y="56" width="8" height="15"/>
+                                <rect key="frame" x="11" y="54" width="36" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="btnBack.png">
@@ -135,7 +135,7 @@
     </scenes>
     <resources>
         <image name="TopBarBack.png" width="659" height="1136"/>
-        <image name="btnBack.png" width="15" height="25"/>
+        <image name="btnBack.png" width="8" height="12"/>
         <image name="btnEditgram.png" width="63" height="57"/>
         <image name="btnGallory.png" width="35" height="38"/>
         <image name="btnGarm.png" width="60" height="55"/>

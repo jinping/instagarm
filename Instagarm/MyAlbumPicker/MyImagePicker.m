@@ -79,11 +79,11 @@
             break;
         }
     }
-    cameraRollView.selectedImageView.image = image;
+    cameraRollView.originalImage = image;
     [cameraRollView setFrame:CGRectMake(320, 88, 320, 480)];
     cameraRollView.tag = 1003;
-    [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:cameraRollView];
     [cameraRollView initInterface];
+    [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:cameraRollView];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];

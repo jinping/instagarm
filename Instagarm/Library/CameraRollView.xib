@@ -26,7 +26,7 @@
                     <rect key="frame" x="160" y="416" width="160" height="65"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <state key="normal" image="btnUncheck1.png">
+                    <state key="normal" image="btnCheck1.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
@@ -45,7 +45,7 @@
                     </connections>
                 </button>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oid-VY-eEw">
-                    <rect key="frame" x="0.0" y="45" width="320" height="325"/>
+                    <rect key="frame" x="0.0" y="48" width="320" height="320"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>
@@ -59,8 +59,8 @@
         </view>
     </objects>
     <resources>
+        <image name="btnCheck1.png" width="321" height="125"/>
         <image name="btnDelete.png" width="320" height="140"/>
-        <image name="btnUncheck1.png" width="321" height="125"/>
         <image name="gallaryBack.png" width="651" height="1028"/>
         <image name="splite.png" width="1" height="640"/>
         <image name="splite_cross.png" width="675" height="1"/>

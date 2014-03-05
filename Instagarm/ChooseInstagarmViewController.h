@@ -29,6 +29,4 @@
 - (IBAction)btnEditGarm:(id)sender;
 - (IBAction)btnOrder:(id)sender;
 
-- (void)removeSubViews;
-
 @end
