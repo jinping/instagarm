@@ -262,10 +262,10 @@
 		40BC50AF18C46D49009B1FD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				40EB979E18C63AA600922A41 /* btnGallaryActive.png */,
 				40EB975818C5A39400922A41 /* PhotoGallory */,
 				40E3716018C56BBC00F3C6FF /* assets */,
 				40BC50CD18C47895009B1FD4 /* grey_hoodie.png */,
+				40EB979E18C63AA600922A41 /* btnGallaryActive.png */,
 				40BC50C818C47583009B1FD4 /* btnUncheck.png */,
 				40BC50B018C46D89009B1FD4 /* btnBack.png */,
 				40BC50B118C46D89009B1FD4 /* btnCheck.png */,
