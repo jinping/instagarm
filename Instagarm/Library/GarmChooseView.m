@@ -32,6 +32,7 @@
     [self.scrollViewGarm setContentSize:CGSizeMake(320 * garmList.count, 367)];
     self.scrollViewGarm.scrollsToTop = NO;
     self.scrollViewGarm.delegate = self;
+    self.scrollViewGarm.pagingEnabled = YES;
     
     self.pageControl.currentPage = 0;
     self.pageControl.numberOfPages = [garmList count];
@@ -87,7 +88,7 @@
     
     GarmObject *obj = (GarmObject*)[garmList objectAtIndex:currentPage];
     self.lblGarm.text = [NSString stringWithFormat:@"%@", obj.garmName];
-    self.lblPrice.text = [NSString stringWithFormat:@"%@", obj.garmPrice];
+    self.lblPrice.text = [NSString stringWithFormat:@"£%@", obj.garmPrice];
     
     //To set pagecontroll
     self.pageControl.currentPage = currentPage;
