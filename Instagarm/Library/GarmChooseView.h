@@ -21,6 +21,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblPriceTitle;
 @property (strong, nonatomic) IBOutlet UILabel *lblGarm;
 @property (strong, nonatomic) IBOutlet UILabel *lblPrice;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
+
 @property (nonatomic) BOOL isChecked;
 @property (strong, nonatomic) MyAlbumPicker *albumPicker;
 - (void)initInterface;

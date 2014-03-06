@@ -27,6 +27,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="imageViewBackground" destination="MxI-vr-etc" id="Gtk-bQ-SEV"/>
                 <outlet property="thumbTableView" destination="Kpb-mm-p78" id="cPL-Pa-jpT"/>
             </connections>
         </view>

@@ -73,6 +73,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="btnCheck" destination="SAn-b3-LUH" id="XNp-K5-m3p"/>
+                <outlet property="imageViewBackground" destination="CiD-XP-LeS" id="g56-gP-VHd"/>
                 <outlet property="lblGarm" destination="Shw-xf-SzA" id="V1a-u6-wPy"/>
                 <outlet property="lblGarmTitle" destination="cOT-4y-tt1" id="So2-tM-s04"/>
                 <outlet property="lblPrice" destination="CP0-oX-Pa6" id="AWg-5M-nyz"/>

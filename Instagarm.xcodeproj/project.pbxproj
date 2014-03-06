@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40B0A14918C896A7008298B7 /* btnEditgramActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14518C896A7008298B7 /* btnEditgramActive.png */; };
+		40B0A14A18C896A7008298B7 /* btnGallorySelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14618C896A7008298B7 /* btnGallorySelected.png */; };
+		40B0A14B18C896A7008298B7 /* garmeditback.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14718C896A7008298B7 /* garmeditback.png */; };
+		40B0A14C18C896A7008298B7 /* tshirtToedit.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14818C896A7008298B7 /* tshirtToedit.png */; };
+		40B0A14E18C89818008298B7 /* EditImageBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14D18C89818008298B7 /* EditImageBack.png */; };
 		40B4547218C431CC0016A182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547118C431CC0016A182 /* Foundation.framework */; };
 		40B4547418C431CC0016A182 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547318C431CC0016A182 /* CoreGraphics.framework */; };
 		40B4547618C431CC0016A182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547518C431CC0016A182 /* UIKit.framework */; };
@@ -21,6 +26,8 @@
 		40B4549318C431CD0016A182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547518C431CC0016A182 /* UIKit.framework */; };
 		40B4549B18C431CD0016A182 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 40B4549918C431CD0016A182 /* InfoPlist.strings */; };
 		40B4549D18C431CD0016A182 /* InstagarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B4549C18C431CD0016A182 /* InstagarmTests.m */; };
+		40B82A7218C881020039C3CB /* GarmEditView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B82A7118C881020039C3CB /* GarmEditView.m */; };
+		40B82A7518C881AC0039C3CB /* GarmEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B82A7418C881AC0039C3CB /* GarmEditView.xib */; };
 		40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B97B4518C4C06400EAA05F /* GarmChooseView.m */; };
 		40B97B4A18C4C08D00EAA05F /* GarmChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B97B4918C4C08D00EAA05F /* GarmChooseView.xib */; };
 		40BC50BC18C46D89009B1FD4 /* btnBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 40BC50B018C46D89009B1FD4 /* btnBack.png */; };
@@ -76,6 +83,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40B0A14518C896A7008298B7 /* btnEditgramActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnEditgramActive.png; path = Resource/btnEditgramActive.png; sourceTree = "<group>"; };
+		40B0A14618C896A7008298B7 /* btnGallorySelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGallorySelected.png; path = Resource/btnGallorySelected.png; sourceTree = "<group>"; };
+		40B0A14718C896A7008298B7 /* garmeditback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garmeditback.png; path = Resource/garmeditback.png; sourceTree = "<group>"; };
+		40B0A14818C896A7008298B7 /* tshirtToedit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tshirtToedit.png; path = Resource/tshirtToedit.png; sourceTree = "<group>"; };
+		40B0A14D18C89818008298B7 /* EditImageBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EditImageBack.png; path = Resource/EditImageBack.png; sourceTree = "<group>"; };
 		40B4546E18C431CC0016A182 /* Instagarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B4547118C431CC0016A182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40B4547318C431CC0016A182 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -95,6 +107,9 @@
 		40B4549818C431CD0016A182 /* InstagarmTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstagarmTests-Info.plist"; sourceTree = "<group>"; };
 		40B4549A18C431CD0016A182 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		40B4549C18C431CD0016A182 /* InstagarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagarmTests.m; sourceTree = "<group>"; };
+		40B82A7018C881020039C3CB /* GarmEditView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmEditView.h; path = Library/GarmEditView.h; sourceTree = "<group>"; };
+		40B82A7118C881020039C3CB /* GarmEditView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmEditView.m; path = Library/GarmEditView.m; sourceTree = "<group>"; };
+		40B82A7418C881AC0039C3CB /* GarmEditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GarmEditView.xib; path = Library/GarmEditView.xib; sourceTree = "<group>"; };
 		40B97B4418C4C06400EAA05F /* GarmChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmChooseView.h; path = Library/GarmChooseView.h; sourceTree = "<group>"; };
 		40B97B4518C4C06400EAA05F /* GarmChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmChooseView.m; path = Library/GarmChooseView.m; sourceTree = "<group>"; };
 		40B97B4918C4C08D00EAA05F /* GarmChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GarmChooseView.xib; path = Library/GarmChooseView.xib; sourceTree = "<group>"; };
@@ -249,6 +264,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		40B82A7318C8810A0039C3CB /* GarmEdit */ = {
+			isa = PBXGroup;
+			children = (
+				40B82A7018C881020039C3CB /* GarmEditView.h */,
+				40B82A7118C881020039C3CB /* GarmEditView.m */,
+				40B82A7418C881AC0039C3CB /* GarmEditView.xib */,
+			);
+			name = GarmEdit;
+			sourceTree = "<group>";
+		};
 		40B97B4B18C4CAE000EAA05F /* GarmChoose */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +287,11 @@
 		40BC50AF18C46D49009B1FD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				40B0A14D18C89818008298B7 /* EditImageBack.png */,
+				40B0A14518C896A7008298B7 /* btnEditgramActive.png */,
+				40B0A14618C896A7008298B7 /* btnGallorySelected.png */,
+				40B0A14718C896A7008298B7 /* garmeditback.png */,
+				40B0A14818C896A7008298B7 /* tshirtToedit.png */,
 				40EB975818C5A39400922A41 /* PhotoGallory */,
 				40E3716018C56BBC00F3C6FF /* assets */,
 				40BC50CD18C47895009B1FD4 /* grey_hoodie.png */,
@@ -286,6 +316,7 @@
 		40BC50D218C47B6F009B1FD4 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				40B82A7318C8810A0039C3CB /* GarmEdit */,
 				40EB978418C5D10E00922A41 /* MyAlbumPicker */,
 				40EB975518C5A30F00922A41 /* CameraRollView */,
 				40B97B4B18C4CAE000EAA05F /* GarmChoose */,
@@ -443,6 +474,8 @@
 				40EB976118C5A3A300922A41 /* btnDelete.png in Resources */,
 				40BC50C518C46D89009B1FD4 /* splite.png in Resources */,
 				40EB978B18C5D1D200922A41 /* MyAlbumPicker.xib in Resources */,
+				40B0A14C18C896A7008298B7 /* tshirtToedit.png in Resources */,
+				40B0A14A18C896A7008298B7 /* btnGallorySelected.png in Resources */,
 				40E3716918C5761800F3C6FF /* Aleo-Bold.otf in Resources */,
 				40EB976218C5A3A300922A41 /* btnGarmChecked.png in Resources */,
 				40BC50C918C47583009B1FD4 /* btnUncheck.png in Resources */,
@@ -453,9 +486,13 @@
 				40BC50C418C46D89009B1FD4 /* splite_cross.png in Resources */,
 				40E3716B18C5761800F3C6FF /* Franklin Gothic Medium.ttf in Resources */,
 				40EB979118C5DB7700922A41 /* pickerTableCell.xib in Resources */,
+				40B0A14E18C89818008298B7 /* EditImageBack.png in Resources */,
 				40E3716318C56BC600F3C6FF /* app-bg.mp4 in Resources */,
 				40EB976518C5A3A300922A41 /* gallaryBack.png in Resources */,
+				40B0A14918C896A7008298B7 /* btnEditgramActive.png in Resources */,
+				40B0A14B18C896A7008298B7 /* garmeditback.png in Resources */,
 				40BC50CE18C47895009B1FD4 /* grey_hoodie.png in Resources */,
+				40B82A7518C881AC0039C3CB /* GarmEditView.xib in Resources */,
 				40EB97A118C63AA600922A41 /* btnGallaryActive.png in Resources */,
 				40B4548518C431CC0016A182 /* Main.storyboard in Resources */,
 				40BC50C218C46D89009B1FD4 /* home.png in Resources */,
@@ -491,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */,
+				40B82A7218C881020039C3CB /* GarmEditView.m in Sources */,
 				40EB978718C5D19C00922A41 /* MyAlbumPicker.m in Sources */,
 				40BC50CC18C475E3009B1FD4 /* ChooseInstagarmViewController.m in Sources */,
 				40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */,

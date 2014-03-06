@@ -13,6 +13,7 @@
 @property (strong, nonatomic) ALAssetsGroup *assetGroup;
 @property (strong, nonatomic) NSMutableArray *assetArray;
 @property (strong, nonatomic) IBOutlet UITableView *thumbTableView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
 
 - (void)initInterface;
 - (void)setSelectImage:(NSInteger)index;

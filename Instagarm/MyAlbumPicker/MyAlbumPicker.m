@@ -145,6 +145,8 @@
     [UIView animateWithDuration:1.0 animations:nil];
     [imagePicker setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
+    
+    [self.imageViewBackground setHidden:YES];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

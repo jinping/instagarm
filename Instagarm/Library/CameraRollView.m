@@ -7,8 +7,12 @@
 //
 
 #import "CameraRollView.h"
+#import "GarmEditView.h"
+#import "InstagarmAppDelegate.h"
+#import "ChooseInstagarmViewController.h"
 
 @implementation CameraRollView
+@synthesize  garmEditView;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -69,6 +73,27 @@
     
     return newImage;
 }
+- (void)loadGarmEditView
+{
+    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"GarmEditView" owner:self options:nil];
+    for(UIView *view in obj)
+    {
+        if([view isKindOfClass:[GarmEditView class]])
+        {
+            self.garmEditView = (GarmEditView*)view;
+            break;
+        }
+    }
+    [self.garmEditView setFrame:CGRectMake(320, 88, 320, 480)];
+    [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:self.garmEditView];
+    
+    [UIView beginAnimations:@"left" context:nil];
+    [UIView animateWithDuration:1.0 animations:nil];
+    [self.garmEditView setFrame:CGRectMake(0, 88, 320, 480)];
+    [UIView commitAnimations];
+    
+}
+
 #pragma Actions
 - (IBAction)btnCheck:(id)sender
 {
@@ -76,6 +101,15 @@
     self.isChecked = YES;
     [btnStatus setBool:YES forKey:@"Photo"];
     [btnStatus synchronize];
+    
+    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+    [civc.btnEditGarm setImage:[UIImage imageNamed:@"btnEditgramActive.png"] forState:UIControlStateNormal];
+    [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallorySelected.png"] forState:UIControlStateNormal];
+    [self.imageViewBackground setHidden:YES];
+    
+    [self loadGarmEditView];
+    self.garmEditView.editImageView.image = self.originalImage;
+    [self.garmEditView initInterface];
 }
 
 - (IBAction)btnDelete:(id)sender

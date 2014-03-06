@@ -11,6 +11,7 @@
 #import "GarmChooseView.h"
 #import "MyImagePicker.h"
 #import "InstagarmAppDelegate.h"
+#import "MyAlbumPicker.h"
 
 @interface ChooseInstagarmViewController ()
 
@@ -132,11 +133,41 @@
         [view setFrame:CGRectMake(-320, rect.origin.y, rect.size.width, rect.size.height)];
         [UIView commitAnimations];
         [self performSelector:@selector(removeFromParent:) withObject:view afterDelay:1.0];
+        [self setPreviousViewStatus:self.view.subviews[count - 2]];
+    }
+    else
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+        
     }
 }
 - (void)removeFromParent:(UIView*)view
 {
     [view removeFromSuperview];
+}
+- (void)setPreviousViewStatus:(UIView*)theView
+{
+    if([theView isKindOfClass:[CameraRollView class]])
+    {
+        CameraRollView *tmp = (CameraRollView*)theView;
+        [tmp.imageViewBackground setHidden:NO];
+    }
+    if([theView isKindOfClass:[GarmChooseView class]])
+    {
+        GarmChooseView *tmp = (GarmChooseView*)theView;
+        [tmp.imageViewBackground setHidden:NO];
+    }
+    if([theView isKindOfClass:[MyAlbumPicker class]])
+    {
+        MyAlbumPicker *tmp = (MyAlbumPicker*)theView;
+        [tmp.imageViewBackground setHidden:NO];
+    }
+    if([theView isKindOfClass:[MyImagePicker class]])
+    {
+        MyImagePicker *tmp = (MyImagePicker*)theView;
+        [tmp.imageViewBackground setHidden:NO];
+    }
+    
 }
 - (IBAction)btnGarm:(id)sender
 {

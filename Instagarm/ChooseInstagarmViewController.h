@@ -18,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnEditGarm;
 @property (strong, nonatomic) IBOutlet UIButton *btnOrder;
 @property (strong, nonatomic) IBOutlet UILabel *lblTitle;
+@property (strong, nonatomic) IBOutlet UIButton *btnBack;
 
 @property (strong, nonatomic) GarmChooseView *chooseView;
 @property (strong, nonatomic) CameraRollView *cameraRollView;

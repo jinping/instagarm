@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MyAlbumPicker.h"
+#import "GarmEditView.h"
 
 @interface CameraRollView : UIView
 
@@ -16,6 +17,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *selectedImageView;
 @property (strong, nonatomic) UIImage *originalImage;
 @property (nonatomic) BOOL isChecked;
+@property (strong, nonatomic) GarmEditView *garmEditView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
+
 
 - (IBAction)btnCheck:(id)sender;
 - (IBAction)btnDelete:(id)sender;

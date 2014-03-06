@@ -90,7 +90,7 @@
     [cameraRollView setFrame:CGRectMake(0, 88, 320, 480)];
     [UIView commitAnimations];
     
-    
+    [self.imageViewBackground setHidden:YES];
 }
 
 - (NSArray *)assetsForIndexPath:(NSIndexPath *)path

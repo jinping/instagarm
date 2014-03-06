@@ -112,6 +112,7 @@
         
     [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
     [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarmChecked.png"] forState:UIControlStateNormal];
+    [self.imageViewBackground setHidden:YES];
     
     [btnStatus synchronize];
 }

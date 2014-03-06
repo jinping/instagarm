@@ -11,6 +11,8 @@
 
 @interface MyAlbumPicker : UIView<UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *pickerTableView;
+@property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
+
 @property (strong, nonatomic) NSMutableArray *assetGroups;
 @property (strong, nonatomic) ALAssetsLibrary *library;
 

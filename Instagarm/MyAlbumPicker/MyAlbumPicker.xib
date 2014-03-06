@@ -28,6 +28,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="imageViewBackground" destination="Afd-rO-O1V" id="tQY-3j-Sfy"/>
                 <outlet property="pickerTableView" destination="h3L-V8-Lgi" id="X4q-JO-Bdw"/>
             </connections>
         </view>

@@ -95,7 +95,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CcO-ou-HM4">
-                                <rect key="frame" x="180" y="51" width="32" height="30"/>
+                                <rect key="frame" x="175" y="51" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="btnEditgram.png">
@@ -106,7 +106,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxe-FE-tRA">
-                                <rect key="frame" x="249" y="57" width="25" height="18"/>
+                                <rect key="frame" x="241" y="57" width="25" height="18"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="btnOrder.png">
@@ -121,6 +121,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="v2l-HK-Jqw"/>
                     <connections>
+                        <outlet property="btnBack" destination="UJG-vi-0ZW" id="MbC-Un-eze"/>
                         <outlet property="btnEditGarm" destination="CcO-ou-HM4" id="aa6-3c-NxD"/>
                         <outlet property="btnGallory" destination="B5D-TF-e3J" id="QTX-Dm-W1e"/>
                         <outlet property="btnGarm" destination="gvD-pr-kmU" id="SfH-7l-JQD"/>
