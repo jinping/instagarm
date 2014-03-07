@@ -30,4 +30,6 @@
 - (IBAction)btnEditGarm:(id)sender;
 - (IBAction)btnOrder:(id)sender;
 
+- (void)setPreviousViewStatus:(UIView*)theView;
+
 @end

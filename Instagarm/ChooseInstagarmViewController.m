@@ -151,14 +151,17 @@
     {
         CameraRollView *tmp = (CameraRollView*)theView;
         [tmp.imageViewBackground setHidden:NO];
+        self.lblTitle.text = @"choose-a-design";
     }
     if([theView isKindOfClass:[GarmChooseView class]])
     {
         GarmChooseView *tmp = (GarmChooseView*)theView;
         [tmp.imageViewBackground setHidden:NO];
+        self.lblTitle.text = @"choose-a-garm";
     }
     if([theView isKindOfClass:[MyAlbumPicker class]])
     {
+    
         MyAlbumPicker *tmp = (MyAlbumPicker*)theView;
         [tmp.imageViewBackground setHidden:NO];
     }

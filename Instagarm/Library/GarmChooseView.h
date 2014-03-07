@@ -25,6 +25,8 @@
 
 @property (nonatomic) BOOL isChecked;
 @property (strong, nonatomic) MyAlbumPicker *albumPicker;
+@property (nonatomic) NSInteger currentPage;
+
 - (void)initInterface;
 - (IBAction)btnCheck:(id)sender;
 

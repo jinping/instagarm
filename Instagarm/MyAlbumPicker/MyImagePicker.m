@@ -80,14 +80,14 @@
         }
     }
     cameraRollView.originalImage = image;
-    [cameraRollView setFrame:CGRectMake(320, 88, 320, 480)];
+    [cameraRollView setFrame:CGRectMake(320, 86, 320, 482)];
     cameraRollView.tag = 1003;
     [cameraRollView initInterface];
     [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:cameraRollView];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [cameraRollView setFrame:CGRectMake(0, 88, 320, 480)];
+    [cameraRollView setFrame:CGRectMake(0, 86, 320, 482)];
     [UIView commitAnimations];
     
     [self.imageViewBackground setHidden:YES];

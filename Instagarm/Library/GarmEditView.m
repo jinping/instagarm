@@ -6,7 +6,11 @@
 //  Copyright (c) 2014 2wodigits. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "GarmEditView.h"
+#import "GarmObject.h"
+#import "InstagarmAppDelegate.h"
+#import "ChooseInstagarmViewController.h"
 
 @implementation GarmEditView
 
@@ -21,6 +25,29 @@
 - (void)initInterface
 {
     [self AddGestureRecognizersToView:self];
+    oldTransform = self.transform;
+    [self setMask];
+    GarmObject *garment = [self getGarment];
+    self.garmImageView.image = garment.garmImage.image;
+}
+-(GarmObject*)getGarment
+{
+    GarmObject *obj = [InstagarmAppDelegate sharedInstance].garment;
+    return obj;
+}
+- (void)setMask
+{
+    CALayer *mask = [CALayer layer];
+    mask.contents = (id)[[UIImage imageNamed:@"mask.png"] CGImage];
+    mask.frame = CGRectMake(0, 0, 300, 315);
+    self.garmImageView.layer.mask = mask;
+    self.garmImageView.layer.masksToBounds = YES;
+    
+    CALayer *maskBack = [CALayer layer];
+    maskBack.contents = (id)[[UIImage imageNamed:@"maskBack.png"] CGImage];
+    maskBack.frame = CGRectMake(0, 0, 320, 482);
+    self.imageViewBackground.layer.mask = maskBack;
+    self.imageViewBackground.layer.masksToBounds = YES;
 }
 #pragma Gesture Actions
 - (void)AddGestureRecognizersToView:(UIView*)theView
@@ -47,7 +74,7 @@
     CGAffineTransform currentTransform = self.editImageView.transform;
     CGAffineTransform newTransform = CGAffineTransformRotate(currentTransform,rotation);
     [self.editImageView setTransform:newTransform];
-    
+
     lastRotation = [recognizer rotation];
     oldTransform = self.editImageView.transform;
 }
@@ -79,24 +106,40 @@
     else if(recognizer.state != UIGestureRecognizerStateEnded)
     {
         if (isPan)
+        {
             self.editImageView.transform = CGAffineTransformTranslate(oldTransform, newPoint.x, newPoint.y);
+        }
     }
     else
     {
         if (isPan)
         {
             self.editImageView.transform = CGAffineTransformTranslate(oldTransform, newPoint.x, newPoint.y);
-            oldTransform = self.editImageView.transform;
         }
         isPan = NO;
     }
 
 }
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)recognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)other
+{
+    return YES;
+}
+
 #pragma actions
 - (IBAction)btnCheck:(id)sender {
 }
 
-- (IBAction)btnDelete:(id)sender {
+- (IBAction)btnDelete:(id)sender
+{
+    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+    [civc.btnEditGarm setImage:[UIImage imageNamed:@"btnEditgram.png"] forState:UIControlStateNormal];
+    
+    [self removeFromSuperview];
+    
+    NSInteger count = [civc.view.subviews count];
+    CameraRollView *cameraRoll = (CameraRollView*)[civc.view.subviews objectAtIndex:count -1];
+    [cameraRoll.imageViewBackground setHidden:NO];
+    civc.lblTitle.text = @"choose-a-design";
 }
 
 /*

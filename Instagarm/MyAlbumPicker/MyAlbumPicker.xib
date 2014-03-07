@@ -15,7 +15,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="h3L-V8-Lgi">
-                    <rect key="frame" x="0.0" y="5" width="320" height="475"/>
+                    <rect key="frame" x="0.0" y="4" width="320" height="475"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" red="0.86274516582489014" green="0.86274516582489014" blue="0.81176477670669556" alpha="1" colorSpace="deviceRGB"/>
                     <color key="sectionIndexTrackingBackgroundColor" red="0.86666673421859741" green="0.86666673421859741" blue="0.81568634510040283" alpha="1" colorSpace="deviceRGB"/>

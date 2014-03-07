@@ -84,14 +84,14 @@
 #pragma scrollview data
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    NSInteger currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
+    self.currentPage = scrollView.contentOffset.x / scrollView.frame.size.width;
     
-    GarmObject *obj = (GarmObject*)[garmList objectAtIndex:currentPage];
+    GarmObject *obj = (GarmObject*)[garmList objectAtIndex:self.currentPage];
     self.lblGarm.text = [NSString stringWithFormat:@"%@", obj.garmName];
     self.lblPrice.text = [NSString stringWithFormat:@"£%@", obj.garmPrice];
     
     //To set pagecontroll
-    self.pageControl.currentPage = currentPage;
+    self.pageControl.currentPage = self.currentPage;
 }
 - (void)changePage
 {
@@ -109,11 +109,15 @@
     [self loadAlbumPicker];
     [self.albumPicker initInterface];
     self.albumPicker.tag = 1001;
-        
+    
+    //To save selected garment
+    GarmObject *obj = (GarmObject*)[garmList objectAtIndex:self.currentPage];
+    [InstagarmAppDelegate sharedInstance].garment = obj;
+    
     [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallaryActive.png"] forState:UIControlStateNormal];
     [civc.btnGarm setImage:[UIImage imageNamed:@"btnGarmChecked.png"] forState:UIControlStateNormal];
     [self.imageViewBackground setHidden:YES];
-    
+    civc.lblTitle.text = @"choose-a-design";
     [btnStatus synchronize];
 }
 - (void)loadAlbumPicker

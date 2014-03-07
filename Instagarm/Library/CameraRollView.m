@@ -10,6 +10,7 @@
 #import "GarmEditView.h"
 #import "InstagarmAppDelegate.h"
 #import "ChooseInstagarmViewController.h"
+#import "MyImagePicker.h"
 
 @implementation CameraRollView
 @synthesize  garmEditView;
@@ -84,12 +85,12 @@
             break;
         }
     }
-    [self.garmEditView setFrame:CGRectMake(320, 88, 320, 480)];
+    [self.garmEditView setFrame:CGRectMake(320, 86, 320, 482)];
     [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:self.garmEditView];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [self.garmEditView setFrame:CGRectMake(0, 88, 320, 480)];
+    [self.garmEditView setFrame:CGRectMake(0, 86, 320, 482)];
     [UIView commitAnimations];
     
 }
@@ -106,6 +107,7 @@
     [civc.btnEditGarm setImage:[UIImage imageNamed:@"btnEditgramActive.png"] forState:UIControlStateNormal];
     [civc.btnGallory setImage:[UIImage imageNamed:@"btnGallorySelected.png"] forState:UIControlStateNormal];
     [self.imageViewBackground setHidden:YES];
+    civc.lblTitle.text = @"create-a-garm";
     
     [self loadGarmEditView];
     self.garmEditView.editImageView.image = self.originalImage;
@@ -116,6 +118,12 @@
 {
     self.selectedImageView.image = nil;
     [self removeFromSuperview];
+    
+    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+    NSInteger count = civc.view.subviews.count;
+    MyImagePicker *imagePicker = (MyImagePicker*)[civc.view.subviews objectAtIndex:count -1];
+    [imagePicker.imageViewBackground  setHidden:NO];
+    
 }
 
 /*

@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GarmObject.h"
 
 @interface InstagarmAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UIViewController *viewController;
+@property (strong, nonatomic) GarmObject *garment;
 
 + (InstagarmAppDelegate*)sharedInstance;
 

@@ -137,13 +137,13 @@
     [imagePicker.assetGroup setAssetsFilter:[ALAssetsFilter allPhotos]];
     [imagePicker initInterface];
     
-    [imagePicker setFrame:CGRectMake(320, 88, 320, 480)];
+    [imagePicker setFrame:CGRectMake(320, 86, 320, 482)];
     [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:imagePicker];
     imagePicker.tag = 1002;
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [imagePicker setFrame:CGRectMake(0, 88, 320, 480)];
+    [imagePicker setFrame:CGRectMake(0, 86, 320, 482)];
     [UIView commitAnimations];
     
     [self.imageViewBackground setHidden:YES];

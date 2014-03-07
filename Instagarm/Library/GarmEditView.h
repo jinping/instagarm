@@ -20,6 +20,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnCheck;
 @property (strong, nonatomic) IBOutlet UIButton *btnDelete;
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
+@property (strong, nonatomic) IBOutlet UIImageView *garmImageView;
 
 @property (strong, nonatomic) UIRotationGestureRecognizer *rotationGesture;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGesture;
