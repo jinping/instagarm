@@ -131,9 +131,45 @@
 {
     return YES;
 }
-
+- (void)saveImage
+{
+    
+}
+- (void)loadGarmOrderBackView
+{
+    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"GarmOrderBackView" owner:self options:nil];
+    for(UIView *view in obj)
+    {
+        if([view isKindOfClass:[GarmOrderBackView class]])
+        {
+            self.garmOrderBackView = (GarmOrderBackView*)view;
+            break;
+        }
+    }
+    [self.garmOrderBackView setFrame:CGRectMake(320, 86, 320, 482)];
+    [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:self.garmOrderBackView];
+    
+    [UIView beginAnimations:@"left" context:nil];
+    [UIView animateWithDuration:1.0 animations:nil];
+    [self.garmOrderBackView setFrame:CGRectMake(0, 86, 320, 482)];
+    [UIView commitAnimations];
+}
 #pragma actions
-- (IBAction)btnCheck:(id)sender {
+- (IBAction)btnCheck:(id)sender
+{
+    NSUserDefaults *btnStatus = [NSUserDefaults standardUserDefaults];
+    self.isChecked = YES;
+    [btnStatus setBool:YES forKey:@"GarmCreate"];
+    
+    [self.imageViewBackground setHidden:YES];
+    
+    ChooseInstagarmViewController *civc = (ChooseInstagarmViewController*)[InstagarmAppDelegate sharedInstance].viewController;
+    [civc.btnEditGarm setImage:[UIImage imageNamed:@"btnEditGarmChecked.png"] forState:UIControlStateNormal];
+    [civc.btnOrder setImage:[UIImage imageNamed:@"btnGarmOrderActive.png"] forState:UIControlStateNormal];
+    
+    [self saveImage];
+    [self loadGarmOrderBackView];
+    
 }
 
 - (IBAction)btnDelete:(id)sender

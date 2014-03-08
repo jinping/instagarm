@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40ABF56F18CB245B00D19805 /* GarmOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ABF56E18CB245B00D19805 /* GarmOrderView.m */; };
+		40ABF57118CB247100D19805 /* GarmOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57018CB247100D19805 /* GarmOrderView.xib */; };
+		40ABF57E18CB250100D19805 /* btnGarmOrderActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57218CB250100D19805 /* btnGarmOrderActive.png */; };
+		40ABF57F18CB250100D19805 /* btnMinus.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57318CB250100D19805 /* btnMinus.png */; };
+		40ABF58018CB250100D19805 /* btnPlus.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57418CB250100D19805 /* btnPlus.png */; };
+		40ABF58118CB250100D19805 /* btnSendToPrint.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57518CB250100D19805 /* btnSendToPrint.png */; };
+		40ABF58218CB250100D19805 /* garmorderback.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57618CB250100D19805 /* garmorderback.png */; };
+		40ABF58318CB250100D19805 /* OrderBrand.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57718CB250100D19805 /* OrderBrand.png */; };
+		40ABF58418CB250100D19805 /* tablecellback1.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57818CB250100D19805 /* tablecellback1.png */; };
+		40ABF58518CB250100D19805 /* tablecellnormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57918CB250100D19805 /* tablecellnormal.png */; };
+		40ABF58618CB250100D19805 /* tablecellnormal2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57A18CB250100D19805 /* tablecellnormal2.png */; };
+		40ABF58718CB250100D19805 /* tablecellnormal3.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57B18CB250100D19805 /* tablecellnormal3.png */; };
+		40ABF58818CB250100D19805 /* tablecellnormal4.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57C18CB250100D19805 /* tablecellnormal4.png */; };
+		40ABF58918CB250100D19805 /* tablecellnormal5.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57D18CB250100D19805 /* tablecellnormal5.png */; };
+		40ABF58C18CB347100D19805 /* GarmOrderBackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ABF58B18CB347100D19805 /* GarmOrderBackView.m */; };
+		40ABF58E18CB348500D19805 /* GarmOrderBackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF58D18CB348500D19805 /* GarmOrderBackView.xib */; };
+		40ABF59018CB381200D19805 /* btnEditGarmChecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF58F18CB381200D19805 /* btnEditGarmChecked.png */; };
 		40B0A14918C896A7008298B7 /* btnEditgramActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14518C896A7008298B7 /* btnEditgramActive.png */; };
 		40B0A14A18C896A7008298B7 /* btnGallorySelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14618C896A7008298B7 /* btnGallorySelected.png */; };
 		40B0A14B18C896A7008298B7 /* garmeditback.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B0A14718C896A7008298B7 /* garmeditback.png */; };
@@ -87,6 +104,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40ABF56D18CB245B00D19805 /* GarmOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmOrderView.h; path = Library/GarmOrderView.h; sourceTree = "<group>"; };
+		40ABF56E18CB245B00D19805 /* GarmOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmOrderView.m; path = Library/GarmOrderView.m; sourceTree = "<group>"; };
+		40ABF57018CB247100D19805 /* GarmOrderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GarmOrderView.xib; path = Library/GarmOrderView.xib; sourceTree = "<group>"; };
+		40ABF57218CB250100D19805 /* btnGarmOrderActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGarmOrderActive.png; path = Resource/btnGarmOrderActive.png; sourceTree = "<group>"; };
+		40ABF57318CB250100D19805 /* btnMinus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnMinus.png; path = Resource/btnMinus.png; sourceTree = "<group>"; };
+		40ABF57418CB250100D19805 /* btnPlus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnPlus.png; path = Resource/btnPlus.png; sourceTree = "<group>"; };
+		40ABF57518CB250100D19805 /* btnSendToPrint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnSendToPrint.png; path = Resource/btnSendToPrint.png; sourceTree = "<group>"; };
+		40ABF57618CB250100D19805 /* garmorderback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garmorderback.png; path = Resource/garmorderback.png; sourceTree = "<group>"; };
+		40ABF57718CB250100D19805 /* OrderBrand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = OrderBrand.png; path = Resource/OrderBrand.png; sourceTree = "<group>"; };
+		40ABF57818CB250100D19805 /* tablecellback1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellback1.png; path = Resource/tablecellback1.png; sourceTree = "<group>"; };
+		40ABF57918CB250100D19805 /* tablecellnormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellnormal.png; path = Resource/tablecellnormal.png; sourceTree = "<group>"; };
+		40ABF57A18CB250100D19805 /* tablecellnormal2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellnormal2.png; path = Resource/tablecellnormal2.png; sourceTree = "<group>"; };
+		40ABF57B18CB250100D19805 /* tablecellnormal3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellnormal3.png; path = Resource/tablecellnormal3.png; sourceTree = "<group>"; };
+		40ABF57C18CB250100D19805 /* tablecellnormal4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellnormal4.png; path = Resource/tablecellnormal4.png; sourceTree = "<group>"; };
+		40ABF57D18CB250100D19805 /* tablecellnormal5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tablecellnormal5.png; path = Resource/tablecellnormal5.png; sourceTree = "<group>"; };
+		40ABF58A18CB347100D19805 /* GarmOrderBackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmOrderBackView.h; path = Library/GarmOrderBackView.h; sourceTree = "<group>"; };
+		40ABF58B18CB347100D19805 /* GarmOrderBackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmOrderBackView.m; path = Library/GarmOrderBackView.m; sourceTree = "<group>"; };
+		40ABF58D18CB348500D19805 /* GarmOrderBackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GarmOrderBackView.xib; path = Library/GarmOrderBackView.xib; sourceTree = "<group>"; };
+		40ABF58F18CB381200D19805 /* btnEditGarmChecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnEditGarmChecked.png; path = Resource/btnEditGarmChecked.png; sourceTree = "<group>"; };
 		40B0A14518C896A7008298B7 /* btnEditgramActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnEditgramActive.png; path = Resource/btnEditgramActive.png; sourceTree = "<group>"; };
 		40B0A14618C896A7008298B7 /* btnGallorySelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = btnGallorySelected.png; path = Resource/btnGallorySelected.png; sourceTree = "<group>"; };
 		40B0A14718C896A7008298B7 /* garmeditback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garmeditback.png; path = Resource/garmeditback.png; sourceTree = "<group>"; };
@@ -195,6 +231,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40ABF56C18CB1BD800D19805 /* GarmOrder */ = {
+			isa = PBXGroup;
+			children = (
+				40ABF56D18CB245B00D19805 /* GarmOrderView.h */,
+				40ABF56E18CB245B00D19805 /* GarmOrderView.m */,
+				40ABF57018CB247100D19805 /* GarmOrderView.xib */,
+				40ABF58A18CB347100D19805 /* GarmOrderBackView.h */,
+				40ABF58B18CB347100D19805 /* GarmOrderBackView.m */,
+				40ABF58D18CB348500D19805 /* GarmOrderBackView.xib */,
+			);
+			name = GarmOrder;
+			sourceTree = "<group>";
+		};
 		40B4546518C431CC0016A182 = {
 			isa = PBXGroup;
 			children = (
@@ -298,6 +347,19 @@
 		40BC50AF18C46D49009B1FD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				40ABF58F18CB381200D19805 /* btnEditGarmChecked.png */,
+				40ABF57218CB250100D19805 /* btnGarmOrderActive.png */,
+				40ABF57318CB250100D19805 /* btnMinus.png */,
+				40ABF57418CB250100D19805 /* btnPlus.png */,
+				40ABF57518CB250100D19805 /* btnSendToPrint.png */,
+				40ABF57618CB250100D19805 /* garmorderback.png */,
+				40ABF57718CB250100D19805 /* OrderBrand.png */,
+				40ABF57818CB250100D19805 /* tablecellback1.png */,
+				40ABF57918CB250100D19805 /* tablecellnormal.png */,
+				40ABF57A18CB250100D19805 /* tablecellnormal2.png */,
+				40ABF57B18CB250100D19805 /* tablecellnormal3.png */,
+				40ABF57C18CB250100D19805 /* tablecellnormal4.png */,
+				40ABF57D18CB250100D19805 /* tablecellnormal5.png */,
 				40B29B8518CA145D0097DA0F /* maskBack.png */,
 				40B29B8318CA03B70097DA0F /* mask.png */,
 				40B0A14D18C89818008298B7 /* EditImageBack.png */,
@@ -330,6 +392,7 @@
 		40BC50D218C47B6F009B1FD4 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				40ABF56C18CB1BD800D19805 /* GarmOrder */,
 				40B82A7318C8810A0039C3CB /* GarmEdit */,
 				40EB978418C5D10E00922A41 /* MyAlbumPicker */,
 				40EB975518C5A30F00922A41 /* CameraRollView */,
@@ -483,28 +546,37 @@
 				40BC50C718C46D89009B1FD4 /* tshirt.png in Resources */,
 				40B4548A18C431CC0016A182 /* Images.xcassets in Resources */,
 				40BC50C018C46D89009B1FD4 /* btnGarm.png in Resources */,
+				40ABF57118CB247100D19805 /* GarmOrderView.xib in Resources */,
 				40BC50C118C46D89009B1FD4 /* btnOrder.png in Resources */,
 				40BC50BD18C46D89009B1FD4 /* btnCheck.png in Resources */,
 				40EB976118C5A3A300922A41 /* btnDelete.png in Resources */,
+				40ABF59018CB381200D19805 /* btnEditGarmChecked.png in Resources */,
 				40BC50C518C46D89009B1FD4 /* splite.png in Resources */,
 				40EB978B18C5D1D200922A41 /* MyAlbumPicker.xib in Resources */,
 				40B0A14C18C896A7008298B7 /* tshirtToedit.png in Resources */,
 				40B0A14A18C896A7008298B7 /* btnGallorySelected.png in Resources */,
+				40ABF58718CB250100D19805 /* tablecellnormal3.png in Resources */,
 				40E3716918C5761800F3C6FF /* Aleo-Bold.otf in Resources */,
+				40ABF57E18CB250100D19805 /* btnGarmOrderActive.png in Resources */,
 				40EB976218C5A3A300922A41 /* btnGarmChecked.png in Resources */,
 				40BC50C918C47583009B1FD4 /* btnUncheck.png in Resources */,
+				40ABF58518CB250100D19805 /* tablecellnormal.png in Resources */,
 				40B4547C18C431CC0016A182 /* InfoPlist.strings in Resources */,
+				40ABF58218CB250100D19805 /* garmorderback.png in Resources */,
 				40BC50C618C46D89009B1FD4 /* TopBarBack.png in Resources */,
 				40B29B8418CA03B70097DA0F /* mask.png in Resources */,
 				40EB976318C5A3A300922A41 /* btnGarmInactive.png in Resources */,
+				40ABF57F18CB250100D19805 /* btnMinus.png in Resources */,
 				40EB976018C5A3A300922A41 /* btnCheck1.png in Resources */,
 				40BC50C418C46D89009B1FD4 /* splite_cross.png in Resources */,
 				40E3716B18C5761800F3C6FF /* Franklin Gothic Medium.ttf in Resources */,
 				40EB979118C5DB7700922A41 /* pickerTableCell.xib in Resources */,
 				40B0A14E18C89818008298B7 /* EditImageBack.png in Resources */,
+				40ABF58818CB250100D19805 /* tablecellnormal4.png in Resources */,
 				40E3716318C56BC600F3C6FF /* app-bg.mp4 in Resources */,
 				40EB976518C5A3A300922A41 /* gallaryBack.png in Resources */,
 				40B29B8818CA16940097DA0F /* BackToBack.png in Resources */,
+				40ABF58318CB250100D19805 /* OrderBrand.png in Resources */,
 				40B0A14918C896A7008298B7 /* btnEditgramActive.png in Resources */,
 				40B0A14B18C896A7008298B7 /* garmeditback.png in Resources */,
 				40BC50CE18C47895009B1FD4 /* grey_hoodie.png in Resources */,
@@ -515,13 +587,19 @@
 				40EB975718C5A34400922A41 /* CameraRollView.xib in Resources */,
 				40EB979318C5E43B00922A41 /* tablecellforg.png in Resources */,
 				40EB97A818C7016D00922A41 /* ThumbTableCell.xib in Resources */,
+				40ABF58118CB250100D19805 /* btnSendToPrint.png in Resources */,
+				40ABF58618CB250100D19805 /* tablecellnormal2.png in Resources */,
+				40ABF58E18CB348500D19805 /* GarmOrderBackView.xib in Resources */,
 				40BC50C318C46D89009B1FD4 /* scrollBack.png in Resources */,
 				40BC50BF18C46D89009B1FD4 /* btnGallory.png in Resources */,
+				40ABF58918CB250100D19805 /* tablecellnormal5.png in Resources */,
 				40EB976618C5A3A300922A41 /* tablecellback.png in Resources */,
 				40EB979518C5EB0F00922A41 /* MyImagePickerView.xib in Resources */,
+				40ABF58018CB250100D19805 /* btnPlus.png in Resources */,
 				40B29B8618CA145D0097DA0F /* maskBack.png in Resources */,
 				40E3716A18C5761800F3C6FF /* Aleo-Regular.otf in Resources */,
 				40BC50BC18C46D89009B1FD4 /* btnBack.png in Resources */,
+				40ABF58418CB250100D19805 /* tablecellback1.png in Resources */,
 				40B97B4A18C4C08D00EAA05F /* GarmChooseView.xib in Resources */,
 				40E3716418C56BC600F3C6FF /* instagarm-logo.png in Resources */,
 				40BC50BE18C46D89009B1FD4 /* btnEditgram.png in Resources */,
@@ -544,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40ABF56F18CB245B00D19805 /* GarmOrderView.m in Sources */,
 				40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */,
 				40B82A7218C881020039C3CB /* GarmEditView.m in Sources */,
 				40B29B8D18CA22750097DA0F /* brandView.m in Sources */,
@@ -555,6 +634,7 @@
 				40EB97A618C7014C00922A41 /* ThumbTableCell.m in Sources */,
 				40EB979818C5EB4D00922A41 /* MyImagePicker.m in Sources */,
 				40B4547E18C431CC0016A182 /* main.m in Sources */,
+				40ABF58C18CB347100D19805 /* GarmOrderBackView.m in Sources */,
 				40B4548218C431CC0016A182 /* InstagarmAppDelegate.m in Sources */,
 				40EB975418C5A30B00922A41 /* CameraRollView.m in Sources */,
 			);

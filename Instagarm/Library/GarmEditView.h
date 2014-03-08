@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "brandView.h"
+#import "GarmOrderBackView.h"
 
 @interface GarmEditView : UIView
 {
@@ -27,6 +28,8 @@
 @property (strong, nonatomic) UIRotationGestureRecognizer *rotationGesture;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGesture;
 @property (strong, nonatomic) UIPinchGestureRecognizer *pinchGesture;
+@property (strong, nonatomic) GarmOrderBackView *garmOrderBackView;
+@property (nonatomic) BOOL isChecked;
 
 - (void)initInterface;
 
