@@ -15,6 +15,7 @@
 		40B29B8418CA03B70097DA0F /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B29B8318CA03B70097DA0F /* mask.png */; };
 		40B29B8618CA145D0097DA0F /* maskBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B29B8518CA145D0097DA0F /* maskBack.png */; };
 		40B29B8818CA16940097DA0F /* BackToBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 40B29B8718CA16940097DA0F /* BackToBack.png */; };
+		40B29B8D18CA22750097DA0F /* brandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B29B8C18CA22740097DA0F /* brandView.m */; };
 		40B4547218C431CC0016A182 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547118C431CC0016A182 /* Foundation.framework */; };
 		40B4547418C431CC0016A182 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547318C431CC0016A182 /* CoreGraphics.framework */; };
 		40B4547618C431CC0016A182 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B4547518C431CC0016A182 /* UIKit.framework */; };
@@ -94,6 +95,8 @@
 		40B29B8318CA03B70097DA0F /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mask.png; path = Resource/mask.png; sourceTree = "<group>"; };
 		40B29B8518CA145D0097DA0F /* maskBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = maskBack.png; path = Resource/maskBack.png; sourceTree = "<group>"; };
 		40B29B8718CA16940097DA0F /* BackToBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BackToBack.png; path = Resource/BackToBack.png; sourceTree = "<group>"; };
+		40B29B8B18CA22740097DA0F /* brandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = brandView.h; path = Library/brandView.h; sourceTree = "<group>"; };
+		40B29B8C18CA22740097DA0F /* brandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = brandView.m; path = Library/brandView.m; sourceTree = "<group>"; };
 		40B4546E18C431CC0016A182 /* Instagarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B4547118C431CC0016A182 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		40B4547318C431CC0016A182 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -276,6 +279,8 @@
 				40B82A7018C881020039C3CB /* GarmEditView.h */,
 				40B82A7118C881020039C3CB /* GarmEditView.m */,
 				40B82A7418C881AC0039C3CB /* GarmEditView.xib */,
+				40B29B8B18CA22740097DA0F /* brandView.h */,
+				40B29B8C18CA22740097DA0F /* brandView.m */,
 			);
 			name = GarmEdit;
 			sourceTree = "<group>";
@@ -541,6 +546,7 @@
 			files = (
 				40B97B4618C4C06400EAA05F /* GarmChooseView.m in Sources */,
 				40B82A7218C881020039C3CB /* GarmEditView.m in Sources */,
+				40B29B8D18CA22750097DA0F /* brandView.m in Sources */,
 				40EB978718C5D19C00922A41 /* MyAlbumPicker.m in Sources */,
 				40BC50CC18C475E3009B1FD4 /* ChooseInstagarmViewController.m in Sources */,
 				40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */,

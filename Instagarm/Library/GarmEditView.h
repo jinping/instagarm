@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "brandView.h"
 
 @interface GarmEditView : UIView
 {
@@ -21,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnDelete;
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
 @property (strong, nonatomic) IBOutlet UIImageView *garmImageView;
+@property (strong, nonatomic) IBOutlet brandView *brand;
 
 @property (strong, nonatomic) UIRotationGestureRecognizer *rotationGesture;
 @property (strong, nonatomic) UIPanGestureRecognizer *panGesture;

@@ -26,8 +26,14 @@
 {
     [self AddGestureRecognizersToView:self];
     oldTransform = self.transform;
-    [self setMask];
     GarmObject *garment = [self getGarment];
+    
+    self.brand.layer.borderWidth = 1.0;
+    self.brand.layer.borderColor = [UIColor blackColor].CGColor;
+    [self.brand setup];
+    self.brand.image = self.editImageView.image;
+    [self.brand setImage:self.brand.image];
+    
     self.garmImageView.image = garment.garmImage.image;
 }
 -(GarmObject*)getGarment
@@ -71,34 +77,34 @@
     }
     
     CGFloat rotation = 0.0 - (lastRotation - [recognizer rotation]);
-    CGAffineTransform currentTransform = self.editImageView.transform;
+    CGAffineTransform currentTransform = self.brand.imageView.transform;
     CGAffineTransform newTransform = CGAffineTransformRotate(currentTransform,rotation);
-    [self.editImageView setTransform:newTransform];
+    [self.brand.imageView setTransform:newTransform];
 
     lastRotation = [recognizer rotation];
-    oldTransform = self.editImageView.transform;
+    oldTransform = self.brand.imageView.transform;
 }
 - (void)pinchHandler:(UIPinchGestureRecognizer*)recognizer
 {
     if(recognizer.state != UIGestureRecognizerStateEnded)
 	{
-		self.editImageView.transform = CGAffineTransformScale(oldTransform, recognizer.scale, recognizer.scale);
+		self.brand.imageView.transform = CGAffineTransformScale(oldTransform, recognizer.scale, recognizer.scale);
 	}
 	else
 	{
-		self.editImageView.transform = CGAffineTransformScale(oldTransform, recognizer.scale, recognizer.scale);
-        oldTransform = self.editImageView.transform;
+		self.brand.imageView.transform = CGAffineTransformScale(oldTransform, recognizer.scale, recognizer.scale);
+        oldTransform = self.brand.imageView.transform;
 	}
 }
 - (void)panHandler:(UIPanGestureRecognizer*)recognizer
 {
-    CGPoint newPoint = [recognizer translationInView:self.editImageView];
-    CGPoint loc = [recognizer locationInView:self.editImageView];
+    CGPoint newPoint = [recognizer translationInView:self.brand.imageView];
+    CGPoint loc = [recognizer locationInView:self.brand.imageView];
     
     NSLog(@"%f %f", loc.x, loc.y);
     if (recognizer.state == UIGestureRecognizerStateBegan)
     {
-        if (CGRectContainsPoint(self.editImageView.bounds, loc))
+        if (CGRectContainsPoint(self.brand.imageView.bounds, loc))
         {
             isPan = YES;
         }
@@ -107,14 +113,15 @@
     {
         if (isPan)
         {
-            self.editImageView.transform = CGAffineTransformTranslate(oldTransform, newPoint.x, newPoint.y);
+            self.brand.imageView.transform = CGAffineTransformTranslate(oldTransform, newPoint.x, newPoint.y);
         }
     }
     else
     {
         if (isPan)
         {
-            self.editImageView.transform = CGAffineTransformTranslate(oldTransform, newPoint.x, newPoint.y);
+            self.brand.imageView.transform = CGAffineTransformTranslate(oldTransform, newPoint.x, newPoint.y);
+            oldTransform = self.brand.imageView.transform;
         }
         isPan = NO;
     }

@@ -60,10 +60,16 @@
                     <rect key="frame" x="90" y="130" width="140" height="140"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8IW-Yl-K6r" customClass="brandView">
+                    <rect key="frame" x="92" y="132" width="136" height="136"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="brand" destination="8IW-Yl-K6r" id="Uem-Bp-0k4"/>
                 <outlet property="btnCheck" destination="SAn-b3-LUH" id="N1p-2T-b4n"/>
                 <outlet property="btnDelete" destination="eMW-oG-rOk" id="F0c-E6-UPU"/>
                 <outlet property="editBackImageView" destination="u25-cb-E4a" id="SJK-8c-D64"/>
