@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="1195"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="garmorderback.png" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-wY-owo">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="garmorderback2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-wY-owo">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="1195"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
@@ -386,7 +386,7 @@
                     <textInputTraits key="textInputTraits"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
@@ -394,7 +394,7 @@
         <image name="btnMinus.png" width="36" height="36"/>
         <image name="btnPlus.png" width="36" height="36"/>
         <image name="btnSendToPrint.png" width="618" height="125"/>
-        <image name="garmorderback.png" width="651" height="2813"/>
+        <image name="garmorderback2.png" width="651" height="2813"/>
         <image name="tablecellback1.png" width="620" height="214"/>
         <image name="tablecellnormal.png" width="619" height="182"/>
         <image name="tablecellnormal2.png" width="619" height="292"/>

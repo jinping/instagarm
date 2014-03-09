@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40AACB5718CCA1EF00CC5D0B /* garmorderback2.png in Resources */ = {isa = PBXBuildFile; fileRef = 40AACB5618CCA1EF00CC5D0B /* garmorderback2.png */; };
 		40ABF56F18CB245B00D19805 /* GarmOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 40ABF56E18CB245B00D19805 /* GarmOrderView.m */; };
 		40ABF57118CB247100D19805 /* GarmOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57018CB247100D19805 /* GarmOrderView.xib */; };
 		40ABF57E18CB250100D19805 /* btnGarmOrderActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40ABF57218CB250100D19805 /* btnGarmOrderActive.png */; };
@@ -104,6 +105,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40AACB5618CCA1EF00CC5D0B /* garmorderback2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = garmorderback2.png; path = Resource/garmorderback2.png; sourceTree = "<group>"; };
 		40ABF56D18CB245B00D19805 /* GarmOrderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GarmOrderView.h; path = Library/GarmOrderView.h; sourceTree = "<group>"; };
 		40ABF56E18CB245B00D19805 /* GarmOrderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GarmOrderView.m; path = Library/GarmOrderView.m; sourceTree = "<group>"; };
 		40ABF57018CB247100D19805 /* GarmOrderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GarmOrderView.xib; path = Library/GarmOrderView.xib; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 		40BC50AF18C46D49009B1FD4 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				40AACB5618CCA1EF00CC5D0B /* garmorderback2.png */,
 				40ABF58F18CB381200D19805 /* btnEditGarmChecked.png */,
 				40ABF57218CB250100D19805 /* btnGarmOrderActive.png */,
 				40ABF57318CB250100D19805 /* btnMinus.png */,
@@ -584,6 +587,7 @@
 				40EB97A118C63AA600922A41 /* btnGallaryActive.png in Resources */,
 				40B4548518C431CC0016A182 /* Main.storyboard in Resources */,
 				40BC50C218C46D89009B1FD4 /* home.png in Resources */,
+				40AACB5718CCA1EF00CC5D0B /* garmorderback2.png in Resources */,
 				40EB975718C5A34400922A41 /* CameraRollView.xib in Resources */,
 				40EB979318C5E43B00922A41 /* tablecellforg.png in Resources */,
 				40EB97A818C7016D00922A41 /* ThumbTableCell.xib in Resources */,

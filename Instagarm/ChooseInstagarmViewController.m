@@ -170,6 +170,11 @@
         MyImagePicker *tmp = (MyImagePicker*)theView;
         [tmp.imageViewBackground setHidden:NO];
     }
+    if([theView isKindOfClass:[GarmEditView class]])
+    {
+        GarmEditView *tmp = (GarmEditView*)theView;
+        [tmp.imageViewBackground setHidden:NO];
+    }
     
 }
 - (IBAction)btnGarm:(id)sender

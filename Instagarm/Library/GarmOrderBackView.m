@@ -18,7 +18,32 @@
     }
     return self;
 }
-
+- (void)initInterface
+{
+    self.garmScrollView.pagingEnabled = NO;
+    [self.garmScrollView setContentSize:CGSizeMake(320, 1200)];
+    [self loadGarmOrderView];
+}
+- (void)loadGarmOrderView
+{
+    NSArray *obj = [[NSBundle mainBundle] loadNibNamed:@"GarmOrderView" owner:self options:nil];
+    for(UIView *view in obj)
+    {
+        if([view isKindOfClass:[GarmOrderView class]])
+        {
+            self.garmOrderView = (GarmOrderView*)view;
+            break;
+        }
+    }
+    [self.garmOrderView setFrame:CGRectMake(320, 0, 320, 1195)];
+    [self.garmScrollView addSubview:self.garmOrderView];
+    
+    [UIView beginAnimations:@"left" context:nil];
+    [UIView animateWithDuration:1.0 animations:nil];
+    [self.garmOrderView setFrame:CGRectMake(0, 0, 320, 1195)];
+    [UIView commitAnimations];
+    
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

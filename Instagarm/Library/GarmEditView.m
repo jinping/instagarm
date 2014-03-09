@@ -146,12 +146,13 @@
             break;
         }
     }
-    [self.garmOrderBackView setFrame:CGRectMake(320, 86, 320, 482)];
+    [self.garmOrderBackView setFrame:CGRectMake(320, 84, 320, 484)];
     [[InstagarmAppDelegate sharedInstance].viewController.view addSubview:self.garmOrderBackView];
+    [self.garmOrderBackView initInterface];
     
     [UIView beginAnimations:@"left" context:nil];
     [UIView animateWithDuration:1.0 animations:nil];
-    [self.garmOrderBackView setFrame:CGRectMake(0, 86, 320, 482)];
+    [self.garmOrderBackView setFrame:CGRectMake(0, 84, 320, 484)];
     [UIView commitAnimations];
 }
 #pragma actions
