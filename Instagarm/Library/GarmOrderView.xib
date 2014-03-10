@@ -81,6 +81,9 @@
                     <state key="normal" image="btnMinus.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnMinus:" destination="1" eventType="touchUpInside" id="O5l-Vg-LIP"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOh-3S-AgH">
                     <rect key="frame" x="195" y="44" width="28" height="28"/>
@@ -89,6 +92,9 @@
                     <state key="normal" image="btnPlus.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnPlus:" destination="1" eventType="touchUpInside" id="vw9-cy-q0e"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0Z-3G-R1M">
                     <rect key="frame" x="170" y="47" width="22" height="21"/>
@@ -294,6 +300,9 @@
                     <state key="normal" image="btnSendToPrint.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="btnSendToPrint:" destination="1" eventType="touchUpInside" id="3dJ-ds-jJj"/>
+                    </connections>
                 </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jto-Yh-WFs">
                     <rect key="frame" x="148" y="189" width="158" height="30"/>
@@ -388,6 +397,55 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="CardNumber" destination="rdk-B5-8eC" id="DXi-Wj-Two"/>
+                <outlet property="lblAddress" destination="18J-3N-BX6" id="qlL-S5-Y3M"/>
+                <outlet property="lblCCV" destination="NN5-b4-aW2" id="ZYc-SD-rDi"/>
+                <outlet property="lblCardNum" destination="qez-Yv-HkD" id="iSV-Ef-HFS"/>
+                <outlet property="lblCardNum1" destination="mNS-UT-myY" id="0ui-ib-7TF"/>
+                <outlet property="lblChange" destination="Gyl-AP-Qd6" id="wir-Tr-0Nt"/>
+                <outlet property="lblCount" destination="X0Z-3G-R1M" id="gpa-tb-RBG"/>
+                <outlet property="lblCountry" destination="28K-jG-puM" id="0td-Nz-16z"/>
+                <outlet property="lblDeliveryAddr" destination="ue5-mi-9DQ" id="jfj-Tl-yox"/>
+                <outlet property="lblEmailAddr" destination="O4t-15-dGn" id="U6x-5l-Rf8"/>
+                <outlet property="lblExpireDate" destination="ZxI-3f-iPg" id="xt3-Bg-Mif"/>
+                <outlet property="lblFirstName" destination="w24-7m-Mau" id="wjn-sz-lEf"/>
+                <outlet property="lblGarmName" destination="f0f-Qi-aT8" id="tgX-ZQ-LEW"/>
+                <outlet property="lblGarmName1" destination="v2J-M7-yte" id="0Sv-FG-NTc"/>
+                <outlet property="lblGarmQTY" destination="R9L-MP-921" id="hPk-Rp-jUg"/>
+                <outlet property="lblGarmSIze" destination="ibS-7p-Jzj" id="tPB-fy-y9o"/>
+                <outlet property="lblGarmTitle" destination="I3v-o3-16c" id="H7f-zb-IoL"/>
+                <outlet property="lblHouseName" destination="ILf-0X-xdS" id="ztz-9i-RRx"/>
+                <outlet property="lblLastName" destination="Ekb-gt-b9u" id="IU3-aY-iHX"/>
+                <outlet property="lblMobileNum" destination="HZh-Ra-3m9" id="jBJ-Kg-WmG"/>
+                <outlet property="lblNameOnCard" destination="9FG-nw-u9B" id="3B2-v9-Vi7"/>
+                <outlet property="lblPaymentDetail" destination="S0F-xz-JMq" id="TYN-aL-HK6"/>
+                <outlet property="lblPostCode" destination="Fyn-jZ-saT" id="jXP-eC-v8a"/>
+                <outlet property="lblPostcode1" destination="v9c-bx-EPK" id="5Nb-BA-aPr"/>
+                <outlet property="lblPrice" destination="J2y-PQ-g9T" id="zfp-Vs-5Xf"/>
+                <outlet property="lblPriceValue" destination="1Qa-mO-JgR" id="cye-nF-Iox"/>
+                <outlet property="lblSize" destination="7NS-y6-Zee" id="p95-mE-Dos"/>
+                <outlet property="lblSizeName" destination="BeV-yO-RZ7" id="clG-A8-vBF"/>
+                <outlet property="lblTotalPrice" destination="VVN-jA-QNl" id="Kc0-mr-byh"/>
+                <outlet property="lblTotalPriceValue" destination="l49-Rs-xsT" id="7oO-H0-bxE"/>
+                <outlet property="lblTown" destination="jq6-cx-0IG" id="RLc-WM-L2q"/>
+                <outlet property="lblYourDetail" destination="HnJ-Pn-tJf" id="3sv-Hl-IFJ"/>
+                <outlet property="lblYourOrder" destination="MPT-Am-QOF" id="Wpr-k6-je4"/>
+                <outlet property="txtAddressLine" destination="eML-DI-Twu" id="G5u-8S-Rl3"/>
+                <outlet property="txtCCV" destination="HPS-uJ-uqn" id="2FA-32-n10"/>
+                <outlet property="txtCardNumber" destination="0uj-d1-NTy" id="Z4n-J7-sHo"/>
+                <outlet property="txtCountry" destination="WkY-Nx-8Aj" id="JZu-9d-6RC"/>
+                <outlet property="txtEmailAddr" destination="Jto-Yh-WFs" id="0rE-uL-Nze"/>
+                <outlet property="txtExpiryDate" destination="Cao-2h-TFI" id="3Hd-vQ-QDA"/>
+                <outlet property="txtFirstName" destination="CKl-sV-Bcz" id="GwK-OL-8qj"/>
+                <outlet property="txtHouseName" destination="acc-Qs-Djv" id="9kq-0m-v8Y"/>
+                <outlet property="txtLastName" destination="4vY-ow-p5B" id="yOv-bN-IbH"/>
+                <outlet property="txtMobileNumber" destination="23P-uo-Z8V" id="VVU-R4-87d"/>
+                <outlet property="txtNameOnCard" destination="4Ck-M2-lqg" id="ivk-nw-HEd"/>
+                <outlet property="txtPostcode" destination="clW-7j-DT3" id="y8I-Np-db6"/>
+                <outlet property="txtPostcode1" destination="vLs-SJ-vQm" id="ry3-TH-oTX"/>
+                <outlet property="txtTowmn" destination="KEx-74-tFE" id="s4G-Od-sef"/>
+            </connections>
         </view>
     </objects>
     <resources>
