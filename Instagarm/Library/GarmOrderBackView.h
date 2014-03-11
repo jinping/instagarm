@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GarmOrderView.h"
 
-@interface GarmOrderBackView : UIView
+@interface GarmOrderBackView : UIView<UIScrollViewDelegate>
 @property (strong, nonatomic) IBOutlet UIScrollView *garmScrollView;
 @property (strong, nonatomic) IBOutlet UIImageView *imageViewBackground;
 @property (strong, nonatomic) GarmOrderView *garmOrderView;

@@ -22,7 +22,12 @@
 {
     self.garmScrollView.pagingEnabled = NO;
     [self.garmScrollView setContentSize:CGSizeMake(320, 1200)];
+    self.garmScrollView.delegate = self;
+    
     [self loadGarmOrderView];
+    [self.garmOrderView initInterface];
+    self.garmOrderView.scrollView = self.garmScrollView;
+    
 }
 - (void)loadGarmOrderView
 {
@@ -43,6 +48,10 @@
     [self.garmOrderView setFrame:CGRectMake(0, 0, 320, 1195)];
     [UIView commitAnimations];
     
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    self.garmOrderView.scrollView.contentOffset = self.garmScrollView.contentOffset;
 }
 /*
 // Only override drawRect: if you perform custom drawing.

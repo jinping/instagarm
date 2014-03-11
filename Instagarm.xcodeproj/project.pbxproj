@@ -92,6 +92,7 @@
 		40EB97A118C63AA600922A41 /* btnGallaryActive.png in Resources */ = {isa = PBXBuildFile; fileRef = 40EB979E18C63AA600922A41 /* btnGallaryActive.png */; };
 		40EB97A618C7014C00922A41 /* ThumbTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EB97A518C7014C00922A41 /* ThumbTableCell.m */; };
 		40EB97A818C7016D00922A41 /* ThumbTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40EB97A718C7016D00922A41 /* ThumbTableCell.xib */; };
+		FA4FFA1D18CF71510008C506 /* MyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4FFA1C18CF71510008C506 /* MyTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,8 @@
 		40EB97A418C7014C00922A41 /* ThumbTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThumbTableCell.h; path = MyAlbumPicker/ThumbTableCell.h; sourceTree = "<group>"; };
 		40EB97A518C7014C00922A41 /* ThumbTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThumbTableCell.m; path = MyAlbumPicker/ThumbTableCell.m; sourceTree = "<group>"; };
 		40EB97A718C7016D00922A41 /* ThumbTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ThumbTableCell.xib; path = MyAlbumPicker/ThumbTableCell.xib; sourceTree = "<group>"; };
+		FA4FFA1B18CF71510008C506 /* MyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTextField.h; path = Library/MyTextField.h; sourceTree = "<group>"; };
+		FA4FFA1C18CF71510008C506 /* MyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTextField.m; path = Library/MyTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +245,8 @@
 				40ABF58A18CB347100D19805 /* GarmOrderBackView.h */,
 				40ABF58B18CB347100D19805 /* GarmOrderBackView.m */,
 				40ABF58D18CB348500D19805 /* GarmOrderBackView.xib */,
+				FA4FFA1B18CF71510008C506 /* MyTextField.h */,
+				FA4FFA1C18CF71510008C506 /* MyTextField.m */,
 			);
 			name = GarmOrder;
 			sourceTree = "<group>";
@@ -633,6 +638,7 @@
 				40EB978718C5D19C00922A41 /* MyAlbumPicker.m in Sources */,
 				40BC50CC18C475E3009B1FD4 /* ChooseInstagarmViewController.m in Sources */,
 				40BC50D118C47B6B009B1FD4 /* GarmObject.m in Sources */,
+				FA4FFA1D18CF71510008C506 /* MyTextField.m in Sources */,
 				40B4548818C431CC0016A182 /* InstagarmViewController.m in Sources */,
 				40EB978E18C5DB5D00922A41 /* pickerTableCell.m in Sources */,
 				40EB97A618C7014C00922A41 /* ThumbTableCell.m in Sources */,
@@ -767,10 +773,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ana Castro (AN5M89W6Z7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Instagarm/Instagarm-Prefix.pch";
 				INFOPLIST_FILE = "Instagarm/Instagarm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7D95D592-6BCF-4E7F-B26C-CC1FB6D1859C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -780,10 +788,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ana Castro (AN5M89W6Z7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Instagarm/Instagarm-Prefix.pch";
 				INFOPLIST_FILE = "Instagarm/Instagarm-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7D95D592-6BCF-4E7F-B26C-CC1FB6D1859C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
